@@ -6,6 +6,7 @@ const sass = require("gulp-sass");
 // style.scssをタスクを作成する
 gulp.task("default", function() {
   // style.scssファイルを取得
+  return gulp.watch("css/style.scss", function() {
   return (
     gulp
       .src("css/style.scss")
@@ -13,5 +14,5 @@ gulp.task("default", function() {
       .pipe(sass())
       // cssフォルダー以下に保存
       .pipe(gulp.dest("css"))
-  );
+  )});
 });
