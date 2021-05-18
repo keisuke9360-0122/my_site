@@ -1,0 +1,27 @@
+{
+  "name": "my_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keisuke9360-0122/my_site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keisuke9360-0122/my_site/issues"
+  },
+  "homepage": "https://github.com/keisuke9360-0122/my_site#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
