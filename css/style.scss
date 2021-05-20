@@ -1,8 +1,19 @@
-
 .wrap {
-  background-color:#D96488;
-  height:100%;
+  background-color: #d96488;
+  height: 100%;
   display: grid;
-	grid-template-columns: 100vw;
-	grid-template-rows: 100vh;
+  grid-template-columns: 100vw;
+  grid-template-rows: 100vh;
+}
+.top-container img {
+  object-fit: cover;
+  width: 100%;
+}
+.nav-menu a {
+  margin:1px 10px;
+  display: inline-block;
+}
+.nav-bar ul {
+  display: inline;
+  
 }

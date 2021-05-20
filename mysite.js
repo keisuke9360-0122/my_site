@@ -1,3 +1,6 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//   $(".wrap").slideUp(2000);
-// });
+document.addEventListener("DOMContentLoaded", () => {
+  $(".wrap").slideUp(2000);
+});
+(function (){
+
+});
