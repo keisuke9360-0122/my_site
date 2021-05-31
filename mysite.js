@@ -28,3 +28,39 @@ $(".prev").click(function () {
       "margin-left": 0,
     });
 });
+
+let galleryTop = new Swiper(".main-image02__body", {
+  loop: true, // 繰り返し指定
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: {
+      el: ".main-image02-thumbs",
+      slidesPerView: 4,
+      loop: true,
+      spaceBetween: 10,
+      centerInsufficientSlides: true, // センター揃え
+    },
+  },
+});
+
+const swiper = new Swiper(".main-image02-thumbs", {
+  loop: true,
+  slidesPerView: "auto",
+  centeredSlides: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+(function () {
+  $(".main-image02-thumbs__item").on("click", function () {
+    $("li").classList.remove("swiper-slide-thumb-active");
+  });
+});
+
+$(".image").modaal({
+  type: "image",
+});

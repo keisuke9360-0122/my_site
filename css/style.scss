@@ -1,3 +1,6 @@
+body img {
+  user-select: none;
+}
 .wrap {
   background-color: #d96488;
   height: 100%;
@@ -27,13 +30,13 @@
     width: 20px;
     height: 20px;
     margin-left: -12px;
-    border-left: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-left: 2px solid rgb(240, 178, 63);
+    border-bottom: 2px solid rgb(240, 178, 63);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-animation: sdb 2s infinite;
     animation: sdb 2s infinite;
-
+    
     box-sizing: border-box;
   }
   span:nth-of-type(1) {
@@ -240,3 +243,212 @@
 .slide-item {
   background: #e7e9e8;
 }
+.swiper-container {
+  width: 100%;
+}
+
+.main-image02 {
+  margin: 50px auto;
+  padding: 10px;
+  max-width: 100%;
+
+  box-sizing: border-box;
+}
+
+.main-image02__item {
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+}
+/* メイン画像縦横中央に配置 */
+
+.main-image02__item img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* 画像の比率4対3に指定 2対1の場合は50%にします */
+
+.main-image02__item:after,
+.main-image02-thumbs__item:after {
+  display: inline-block;
+  padding-top: 50%;
+  content: "";
+}
+
+.main-image02-thumbs {
+  width: 100%;
+  padding: none;
+  box-sizing: border-box;
+}
+
+.main-image02-thumbs__item {
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+}
+
+.main-image02-thumbs__item.swiper-slide {
+  opacity: 0.5;
+}
+
+.main-image02-thumbs__item.swiper-slide-thumb-active {
+  opacity: 1;
+}
+/* サムネイル画像画像縦横中央に配置 */
+
+.main-image02-thumbs__item img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* 矢印の色を白に指定 */
+.main-image02 .swiper-button-next {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23f5f5f5'%2F%3E%3C%2Fsvg%3E");
+}
+.main-image02 .swiper-button-prev {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23f5f5f5'%2F%3E%3C%2Fsvg%3E");
+}
+.c-modal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+// 黒背景の設定
+.c-modal_bg {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  width: 100%;
+}
+
+// ウィンドウの設定
+.c-modal_content {
+  background: #fff;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+
+  &._sm {
+    width: 30%;
+  }
+
+  &._md {
+    width: 50%;
+  }
+
+  &._lg {
+    width: 70%;
+  }
+}
+
+.c-modal_content_inner {
+  position: relative;
+  padding: 24px;
+}
+
+// 閉じるボタン
+// .c-modal_close {
+//   position: absolute;
+//   top: 13px;
+//   right: 10px;
+// }
+// .ModalLayer {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100vh;
+//   transition: opacity 0.65s;
+//   pointer-events: none;
+//   opacity: 0;
+//   z-index: 10000;
+// }
+// .ModalLayer.isShow {
+//   transition: opacity 0.65s;
+//   pointer-events: auto;
+//   opacity: 1;
+// }
+// .ModalLayer-Mask {
+//   position: absolute;
+//   background: rgba(0, 0, 0, 0.5);
+//   width: 100%;
+//   height: 100vh;
+// }
+
+// .ModalLayer-Inner {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   width: 100%;
+//   max-width: 1000px;
+//   transform: translate(-50%, -50%);
+// }
+
+// Swiper部分
+// .Modal {
+//   &-Inner {
+//     &-Btn {
+//       position: absolute;
+//       top: -35px;
+//       right: -35px;
+//       width: 70px;
+//       color: #fff;
+//       z-index: 10;
+//       cursor: pointer;
+//       &-Card {
+//         width: 100%;
+//         &-Wrapper {
+//           display: flex;
+//           &-Slide {
+//             width: 100% !important;
+//             height: auto;
+//             &-Item {
+//               padding-top: 50px;
+//               padding-bottom: 50px;
+//               width: 100%;
+//               height: 100%;
+//               background: #059bcc;
+//               &-Box {
+//                 position: relative;
+//                 margin:0 auto;
+//                 width: 100%;
+//                 &-Text {
+//                   color: #fff;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .modaal-wrapper {
+//   position: absolute;
+//   top:0;
+//   height:100%;
+//   width:100%;
+// }
