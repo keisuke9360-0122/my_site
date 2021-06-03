@@ -59,8 +59,37 @@ const swiper = new Swiper(".main-image02-thumbs", {
   $(".main-image02-thumbs__item").on("click", function () {
     $("li").classList.remove("swiper-slide-thumb-active");
   });
+
+
 });
 
 $(".image").modaal({
   type: "image",
 });
+$(".gallery-list").modaal({
+  fullscreen:'true', //フルスクリーンモードにする
+  before_open:function(){// モーダルが開く前に行う動作
+    $('html').css('overflow-y','hidden');/*縦スクロールバーを出さない*/
+  },
+  after_close:function(){// モーダルが閉じた後に行う動作
+    $('html').css('overflow-y','scroll');/*縦スクロールバーを出す*/
+  }
+});
+function fadeAnime() {
+  //ふわっと動くきっかけのクラス名と動きのクラス名の設定
+  $(".category-text").each(function () {
+    //fadeInUpTriggerというクラス名が
+    const elemPos = $(this).offset().top - 10; //要素より、50px上の
+    const scroll = $(window).scrollTop();
+    const windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(this).addClass("fadeUp"); // 画面内に入ったらfadeInというクラス名を追記
+    } else {
+      $(this).removeClass("fadeUp"); // 画面外に出たらfadeInというクラス名を外す
+    }
+  });
+}
+$(window).scroll(function () {
+  fadeAnime(); /* アニメーション用の関数を呼ぶ*/
+});
+
