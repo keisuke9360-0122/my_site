@@ -32,11 +32,13 @@
       </p>
     </div>
     <div class="top-container relative w-full">
-      <img src="./img/images-1.jpg" alt="" />
+      <img src="./img/IMG_0550.jpeg" alt="" />
       <div
-        class="nav-var absolute inset-0 flex justify-around text-gray-100 my-3"
+        class="nav-var absolute inset-0 flex justify-around text-pink-500 my-3"
       >
-        <p class="head-logo text-2xl leading-tight">BeP creative studio</p>
+        <p class="head-logo text-2xl leading-tight text-pink-500">
+          BeP creative studio
+        </p>
         <ul class="nav-menu flex mt-1" id="page-link">
           <li><a href="#area-1">About site</a></li>
           <li><a href="#area-2">Web production</a></li>
@@ -45,11 +47,11 @@
           <li><a href="#area-5">contuct</a></li>
         </ul>
       </div>
-      <div class="scrolldown">
+      <a href="#area-1" class="scrolldown">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </a>
     </div>
     <section>
       <div id="splash">
@@ -67,13 +69,13 @@
           <div class="profile-image relative">
             <img src="./img/IMG_8083.jpeg" alt="" />
 
-            <div class="image-circle absolute"></div>
+            <!-- <div class="image-circle absolute"></div> -->
           </div>
-          <div class="scrolldown">
+          <a href="#area-2" class="scrolldown">
             <span></span>
             <span></span>
             <span></span>
-          </div>
+          </a>
         </div>
         <!--/container-->
       </div>
@@ -191,11 +193,11 @@
           <span class="fas fa-2x fa-angle-double-right text-yellow-200"></span>
         </p>
       </div>
-      <div class="scrolldown relative">
+      <a href="#area-3" class="scrolldown">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </a>
     </div>
 
     <div class="photo-works fadein" id="area-3">
@@ -263,7 +265,7 @@
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
-        <div class="swiper-container main-image02-thumbs mb-10">
+        <div class="swiper-container main-image02-thumbs mb-24">
           <ul class="swiper-wrapper main-image-thumbs__list">
             <li class="swiper-slide main-image02-thumbs__item">
               <img
@@ -300,13 +302,13 @@
           </ul>
         </div>
       </div>
-      <div class="scrolldown relative text-blue-200">
+      <a href="#area-4" class="scrolldown text-blue-200">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </a>
     </div>
-    <div class="hair-works m-10 fadein" id="area-4">
+    <div class="hair-works m-10" id="area-4">
       <h2 class="text-center text-4xl">Hair works</h2>
       <div
         class="
@@ -315,10 +317,19 @@
           min-w-full
           gap-6
           place-items-center
+          randomScroll
         "
       >
         <div
-          class="hover:opacity-50 row-span-2 col-span-1 bg-gray-100 w-100 h-100"
+          class="
+            hover:opacity-50
+            row-span-2
+            col-span-1
+            bg-gray-100
+            w-100
+            h-100
+            opacity-0
+          "
         >
           <div class="image-container">
             <a
@@ -334,7 +345,9 @@
             </a>
           </div>
         </div>
-        <div class="hover:opacity-50 row-span-1 col-span-1 bg-gray-200">
+        <div
+          class="hover:opacity-50 row-span-1 col-span-1 bg-gray-200 opacity-0"
+        >
           <div class="image-container flex items-center">
             <a
               href="./img/comming soon.png"
@@ -484,8 +497,15 @@
               </li>
             </ul>
           </div>
+          <a href="#area-5" class="scrolldown">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
         </div>
-        <div class="hover:opacity-50 row-span-2 col-span-2 bg-gray-500">
+        <div
+          class="hover:opacity-50 row-span-2 col-span-2 bg-gray-500 opacity-0"
+        >
           <a
             href="./img/comming soon.png"
             class="image"
@@ -511,7 +531,9 @@
             />
           </a>
         </div>
-        <div class="hover:opacity-50 row-span-2 col-span-2 bg-gray-600">
+        <div
+          class="hover:opacity-50 row-span-2 col-span-2 bg-gray-600 opacity-0"
+        >
           <a
             href="./img/comming soon.png"
             class="image"
@@ -524,7 +546,9 @@
             />
           </a>
         </div>
-        <div class="hover:opacity-50 row-span-2 col-span-2 bg-gray-700">
+        <div
+          class="hover:opacity-50 row-span-2 col-span-2 bg-gray-700 opacity-0"
+        >
           <a
             href="./img/comming soon.png"
             class="image"
@@ -537,12 +561,13 @@
             />
           </a>
         </div>
+        <!-- <a href="#area-5" class="scrolldown">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a> -->
       </div>
-      <div class="scrolldown relative">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      
     </div>
     <form action="" id="area-5" class="h-screen fadein">
       <div class="form-section flex px-10 py-20">

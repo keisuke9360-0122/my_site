@@ -83,7 +83,6 @@ body img {
   left: 50%;
   transform: translate(-50%, -50%); }
 
-/*========= 画面遷移のためのCSS ===============*/
 /*画面遷移アニメーション*/
 .splashbg {
   display: none; }
@@ -166,14 +165,6 @@ section.appear #container {
       object-fit: cover;
       opacity: 1;
       transition: 2s; }
-
-.image-circle {
-  border: 2px solid red;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  top: 60%;
-  right: 50%; }
 
 .works-image {
   display: grid;
@@ -426,3 +417,17 @@ section.appear #container {
 .caption {
   display: block;
   padding: 10px 0; }
+
+.fadeUphair {
+  animation-name: fadeUpAnimehair;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0; }
+
+@keyframes fadeUpAnimehair {
+  from {
+    opacity: 0;
+    transform: translateY(50px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
