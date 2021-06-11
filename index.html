@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <div class="wrap w-full">
+    <div class="wrap w-full opacity-100">
       <p
         class="
           text-center text-5xl text-gray-100
@@ -33,18 +33,96 @@
     </div>
     <div class="top-container relative w-full">
       <img src="./img/IMG_0550.jpeg" alt="" />
-      <div
-        class="nav-var absolute inset-0 flex justify-around text-pink-500 my-3"
-      >
-        <p class="head-logo text-2xl leading-tight text-pink-500">
+      <div class="nav-var absolute inset-0 flex justify-around text-pink-500">
+        <p class="section-title text-2xl leading-tight text-pink-500 mt-1">
           BeP creative studio
         </p>
         <ul class="nav-menu flex mt-1" id="page-link">
-          <li><a href="#area-1">About site</a></li>
-          <li><a href="#area-2">Web production</a></li>
-          <li><a href="#area-3">Photo garally</a></li>
-          <li><a href="#area-4">Hair</a></li>
-          <li><a href="#area-5">contuct</a></li>
+          <li>
+            <a
+              href="#area-1"
+              class="
+                px-4
+                transform
+                transition
+                duration-700
+                hover:scale-100
+                hover:bg-pink-500
+                rounded-3xl
+                ease-in-out
+                hover:text-white
+              "
+              >About site</a
+            >
+          </li>
+          <li>
+            <a
+              href="#area-2"
+              class="
+                px-4
+                transform
+                transition
+                duration-700
+                hover:scale-100
+                hover:bg-pink-500
+                rounded-3xl
+                ease-in-out
+                hover:text-white
+              "
+              >Web production</a
+            >
+          </li>
+          <li>
+            <a
+              href="#area-3"
+              class="
+                px-4
+                transform
+                transition
+                duration-700
+                hover:scale-100
+                hover:bg-pink-500
+                rounded-3xl
+                ease-in-out
+                hover:text-white
+              "
+              >Photo garally</a
+            >
+          </li>
+          <li>
+            <a
+              href="#area-4"
+              class="
+                px-4
+                transform
+                transition
+                duration-700
+                hover:scale-100
+                hover:bg-pink-500
+                rounded-3xl
+                ease-in-out
+                hover:text-white
+              "
+              >Hair</a
+            >
+          </li>
+          <li>
+            <a
+              href="#area-5"
+              class="
+                px-4
+                transform
+                transition
+                duration-700
+                hover:scale-100
+                hover:bg-pink-500
+                rounded-3xl
+                ease-in-out
+                hover:text-white
+              "
+              >contuct</a
+            >
+          </li>
         </ul>
       </div>
       <a href="#area-1" class="scrolldown">
@@ -53,9 +131,10 @@
         <span></span>
       </a>
     </div>
+
     <section>
       <div id="splash">
-        <div id="splash-logo">ローディング</div>
+        <!-- <div id="splash-logo">ローディング</div> -->
         <!--/splash-->
       </div>
       <div class="splashbg"></div>
@@ -64,12 +143,58 @@
         <div class="plofile-container relative flex" id="area-1">
           <div class="profile-text relative">
             <img src="./img/IMG_8029.jpeg" alt="" />
-            <p class="text-contents absolute">テキスト</p>
+            <div class="text-contents absolute text-center text-gray-900 p-20">
+              <div class="my-20">ABOUT SITE</div>
+              <p class="my-20 text-xl">
+                美容師、フォトグラファー、フロントエンドエンジニアである私が手掛けたフォト作品、お客様のヘアスタイル、web制作物をまとめたポートフォリオサイトです。
+              </p>
+              <p class="my-20 text-xl">『イメージを形にする』</p>
+              <p class="text-xl">
+                新しい価値観をこのサイトを通じてと皆様と創造できたら思います。
+              </p>
+            </div>
           </div>
           <div class="profile-image relative">
             <img src="./img/IMG_8083.jpeg" alt="" />
-
-            <!-- <div class="image-circle absolute"></div> -->
+            <div class="img-circle">
+              <span
+                class="
+                  h-28
+                  w-28
+                  rounded-full
+                  absolute
+                  bg-yellow-300
+                  text-center
+                  pt-10
+                "
+                >hair</span
+              >
+              <span
+                class="
+                  h-28
+                  w-28
+                  rounded-full
+                  absolute
+                  bg-green-500
+                  text-center
+                  pt-10
+                "
+                >photo</span
+              >
+              <span
+                class="
+                  h-28
+                  w-28
+                  rounded-full
+                  absolute
+                  bg-purple-500
+                  text-center
+                  pt-10
+                "
+                >web</span
+              >
+              <!-- <div class="image-circle absolute"></div> -->
+            </div>
           </div>
           <a href="#area-2" class="scrolldown">
             <span></span>
@@ -81,53 +206,50 @@
       </div>
     </section>
     　　
-    <div
-      class="web-works relative leading-none my-10 h-100 bg-gray-100 fadein"
-      id="area-2"
-    >
+    <div class="relative mb-10 h-full bg-gray-100 fadein" id="area-2">
       <!-- <div class="p-10 m-10 bg-gray-100 w-100"> -->
-      <h2 class="text-center text-4xl tracking-wide">Web Work</h2>
+      <h3 class="section-title text-center tracking-wide">Web Work</h3>
       <div class="slide-list-container">
         <div class="slide-list my-20">
           <div class="slide-item works-image">
             <!-- <div class=""> -->
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming soon.png" alt="" /></a>
+                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
               </div>
               <a href="#"><p class="agent-name">クライアント</p></a>
             </div>
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming soon.png" alt="" /></a>
-              </div>
-
-              <a href="#"><p class="agent-name">クライアント</p></a>
-            </div>
-            <div class="image-item">
-              <div class="image-container">
-                <a href="#"><img src="./img/comming soon.png" alt="" /></a>
+                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
               </div>
 
               <a href="#"><p class="agent-name">クライアント</p></a>
             </div>
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming soon.png" alt="" /></a>
+                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
               </div>
 
               <a href="#"><p class="agent-name">クライアント</p></a>
             </div>
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming soon.png" alt="" /></a>
+                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
               </div>
 
               <a href="#"><p class="agent-name">クライアント</p></a>
             </div>
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming soon.png" alt="" /></a>
+                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
+              </div>
+
+              <a href="#"><p class="agent-name">クライアント</p></a>
+            </div>
+            <div class="image-item">
+              <div class="image-container">
+                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
               </div>
 
               <a href="#"><p class="agent-name">クライアント</p></a>
@@ -139,41 +261,41 @@
             <!-- <div class=""> -->
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming soon.png" alt="" /></a>
+                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
               </div>
               <a href="#"><p class="agent-name">クライアント</p></a>
             </div>
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming soon.png" alt="" /></a>
-              </div>
-
-              <a href="#"><p class="agent-name">クライアント</p></a>
-            </div>
-            <div class="image-item">
-              <div class="image-container">
-                <a href="#"><img src="./img/comming soon.png" alt="" /></a>
+                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
               </div>
 
               <a href="#"><p class="agent-name">クライアント</p></a>
             </div>
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming soon.png" alt="" /></a>
+                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
               </div>
 
               <a href="#"><p class="agent-name">クライアント</p></a>
             </div>
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming soon.png" alt="" /></a>
+                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
               </div>
 
               <a href="#"><p class="agent-name">クライアント</p></a>
             </div>
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming soon.png" alt="" /></a>
+                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
+              </div>
+
+              <a href="#"><p class="agent-name">クライアント</p></a>
+            </div>
+            <div class="image-item">
+              <div class="image-container">
+                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
               </div>
 
               <a href="#"><p class="agent-name">クライアント</p></a>
@@ -201,18 +323,18 @@
     </div>
 
     <div class="photo-works fadein" id="area-3">
-      <h2 class="photo-works-title text-center text-4xl">Photo works</h2>
+      <h2 class="section-title text-center text-4xl">Photo works</h2>
       <div class="main-image02 border-0">
         <div class="swiper-container main-image02__body">
           <ul class="swiper-wrapper main-image02__list">
             <li class="swiper-slide main-image02__item">
               <a
-                href="./img/comming soon.png"
+                href="./img/comming_soon.png"
                 class="image"
                 data-modaal-desc="画像1"
               >
                 <img
-                  src="./img/comming soon.png"
+                  src="./img/comming_soon.png"
                   width="800"
                   height="600"
                   alt=""
@@ -221,12 +343,12 @@
             </li>
             <li class="swiper-slide main-image02__item">
               <a
-                href="./img/comming soon.png"
+                href="./img/comming_soon.png"
                 class="image"
                 data-modaal-desc="画像2"
               >
                 <img
-                  src="./img/comming soon.png"
+                  src="./img/comming_soon.png"
                   width="800"
                   height="600"
                   alt=""
@@ -235,12 +357,12 @@
             </li>
             <li class="swiper-slide main-image02__item">
               <a
-                href="./img/comming soon.png"
+                href="./img/comming_soon.png"
                 class="image"
                 data-modaal-desc="画像3"
               >
                 <img
-                  src="./img/comming soon.png"
+                  src="./img/comming_soon.png"
                   width="800"
                   height="600"
                   alt=""
@@ -249,12 +371,12 @@
             </li>
             <li class="swiper-slide main-image02__item">
               <a
-                href="./img/comming soon.png"
+                href="./img/comming_soon.png"
                 class="image"
                 data-modaal-desc="画像4"
               >
                 <img
-                  src="./img/comming soon.png"
+                  src="./img/comming_soon.png"
                   width="800"
                   height="600"
                   alt=""
@@ -268,8 +390,9 @@
         <div class="swiper-container main-image02-thumbs mb-24">
           <ul class="swiper-wrapper main-image-thumbs__list">
             <li class="swiper-slide main-image02-thumbs__item">
+              <!-- TODO: おると属性を指定する -->
               <img
-                src="./img/comming soon.png"
+                src="./img/comming_soon.png"
                 width="800"
                 height="600"
                 alt=""
@@ -277,7 +400,7 @@
             </li>
             <li class="swiper-slide main-image02-thumbs__item">
               <img
-                src="./img/comming soon.png"
+                src="./img/comming_soon.png"
                 width="800"
                 height="600"
                 alt=""
@@ -285,7 +408,7 @@
             </li>
             <li class="swiper-slide main-image02-thumbs__item">
               <img
-                src="./img/comming soon.png"
+                src="./img/comming_soon.png"
                 width="800"
                 height="600"
                 alt=""
@@ -293,7 +416,7 @@
             </li>
             <li class="swiper-slide main-image02-thumbs__item">
               <img
-                src="./img/comming soon.png"
+                src="./img/comming_soon.png"
                 width="800"
                 height="600"
                 alt=""
@@ -309,7 +432,7 @@
       </a>
     </div>
     <div class="hair-works m-10" id="area-4">
-      <h2 class="text-center text-4xl">Hair works</h2>
+      <h2 class="section-title text-center text-4xl">Hair works</h2>
       <div
         class="
           grid grid-rows-4 grid-cols-6
@@ -333,12 +456,12 @@
         >
           <div class="image-container">
             <a
-              href="./img/comming soon.png"
+              href="./img/comming_soon.png"
               class="image"
               data-modaal-desc="画像4"
             >
               <img
-                src="./img/comming soon.png"
+                src="./img/comming_soon.png"
                 class="object-cover w-100"
                 alt=""
               />
@@ -350,12 +473,12 @@
         >
           <div class="image-container flex items-center">
             <a
-              href="./img/comming soon.png"
+              href="./img/comming_soon.png"
               class="image"
               data-modaal-desc="画像4"
             >
               <img
-                src="./img/comming soon.png"
+                src="./img/comming_soon.png"
                 class="object-cover h-100 w-100"
                 alt=""
               />
@@ -383,88 +506,88 @@
             </ul>
             <section id="short-garally" class="hide-area">
               <p>
-                <img src="/img/comming soon.png" alt="" /><span class="caption"
+                <img src="/img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming soon.png" alt="" /><span class="caption"
+                <img src="./img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming soon.png" alt="" /><span class="caption"
+                <img src="./img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming soon.png" alt="" /><span class="caption"
+                <img src="./img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
             </section>
             <section id="medium-garally" class="hide-area">
               <p>
-                <img src="/img/comming soon.png" alt="" /><span class="caption"
+                <img src="/img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming soon.png" alt="" /><span class="caption"
+                <img src="./img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming soon.png" alt="" /><span class="caption"
+                <img src="./img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming soon.png" alt="" /><span class="caption"
+                <img src="./img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
             </section>
             <section id="long-garally" class="hide-area">
               <p>
-                <img src="/img/comming soon.png" alt="" /><span class="caption"
+                <img src="/img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming soon.png" alt="" /><span class="caption"
+                <img src="./img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming soon.png" alt="" /><span class="caption"
+                <img src="./img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming soon.png" alt="" /><span class="caption"
+                <img src="./img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
             </section>
             <section id="mens-garally" class="hide-area">
               <p>
-                <img src="/img/comming soon.png" alt="" /><span class="caption"
+                <img src="/img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming soon.png" alt="" /><span class="caption"
+                <img src="./img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming soon.png" alt="" /><span class="caption"
+                <img src="./img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming soon.png" alt="" /><span class="caption"
+                <img src="./img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
@@ -507,12 +630,12 @@
           class="hover:opacity-50 row-span-2 col-span-2 bg-gray-500 opacity-0"
         >
           <a
-            href="./img/comming soon.png"
+            href="./img/comming_soon.png"
             class="image"
             data-modaal-desc="画像4"
           >
             <img
-              src="./img/comming soon.png"
+              src="./img/comming_soon.png"
               class="object-cover h-100 w-100"
               alt=""
             />
@@ -520,12 +643,12 @@
         </div>
         <div class="hover:opacity-50 row-span-1 col-span-1 bg-gray-300">
           <a
-            href="./img/comming soon.png"
+            href="./img/comming_soon.png"
             class="image"
             data-modaal-desc="画像4"
           >
             <img
-              src="./img/comming soon.png"
+              src="./img/comming_soon.png"
               class="object-cover h-100 w-100"
               alt=""
             />
@@ -535,12 +658,12 @@
           class="hover:opacity-50 row-span-2 col-span-2 bg-gray-600 opacity-0"
         >
           <a
-            href="./img/comming soon.png"
+            href="./img/comming_soon.png"
             class="image"
             data-modaal-desc="画像4"
           >
             <img
-              src="./img/comming soon.png"
+              src="./img/comming_soon.png"
               class="object-cover h-100 w-100"
               alt=""
             />
@@ -550,12 +673,12 @@
           class="hover:opacity-50 row-span-2 col-span-2 bg-gray-700 opacity-0"
         >
           <a
-            href="./img/comming soon.png"
+            href="./img/comming_soon.png"
             class="image"
             data-modaal-desc="画像4"
           >
             <img
-              src="./img/comming soon.png"
+              src="./img/comming_soon.png"
               class="object-cover h-100 w-100"
               alt=""
             />
@@ -567,28 +690,47 @@
         <span></span>
       </a> -->
       </div>
-      
     </div>
     <form action="" id="area-5" class="h-screen fadein">
       <div class="form-section flex px-10 py-20">
         <div class="contact-text w-1/2 text-center leading-10 px-10">
-          <p class="inline-block mx-10">mail</p>
-          <p class="inline-block mx-10">
-            <a href="mailto:keitsuru0122@gmail.com">keitsuru0122@gmail.com</a>
-          </p>
-          <br />
-          <p class="inline-block mx-10">phone</p>
-          <p class="inline-block mx-20">090-9851-0639</p>
-          <div class="sns-icon mt-20 flex justify-end mx-auto">
-            <a href="#" class="ml-10"
-              ><span
-                class="fab fa-2x fa-instagram-square hover:text-red-400"
-              ></span
-            ></a>
-            <a href="#" class="ml-10"
-              ><span class="fab fa-2x fa-twitter hover:text-blue-400"></span
-            ></a>
-            <p></p>
+          <div class="flex">
+            <div class="w-2/4">
+              <p class="border rounded-full border-pink-600">
+                <img
+                  src="./img/IMG_1458.jpeg"
+                  class="ofject-cover w-full rounded-full"
+                  alt=""
+                />
+              </p>
+            </div>
+            <div class="w-2/4 px-4">
+              <p class="my-4">profile</p>
+              <p class="text-base">
+                福岡県出身。福岡市内の美容学校卒業のち都内ヘアサロンに就職。雑誌やwebの広告撮影なども経験し、10年勤務後福岡に戻り、かねてより興味のあったエンジニアの勉強を始める。美容、写真、web制作を組み合わせた新しい価値観を生み出すために活動中。趣味は、サッカー観戦やアウトドア全般。
+              </p>
+            </div>
+          </div>
+          <div class="mt-20 flex">
+            <div class="leading-10">
+              <!-- <p class="inline-block mx-10">mail</p>
+              <p class="inline-block mx-10">
+                <a href="mailto:keitsuru0122@gmail.com"
+                  >keitsuru0122@gmail.com</a
+                >
+              </p>
+              <br />
+              <p class="inline-block mx-10">phone</p>
+              <p class="inline-block mx-20">090-9851-0639</p> -->
+            </div>
+            <div class="sns-icon mx-auto flex items-center">
+              <a
+                href="#"
+                class="mx-4 fab fa-2x fa-instagram-square hover:text-red-600"
+              ></a>
+              <a href="#" class="mx-4 fab fa-2x fa-twitter hover:text-blue-400">
+              </a>
+            </div>
           </div>
         </div>
         <div class="contact-form w-full md:w-1/2 p-6 bg-gray-100">
@@ -644,10 +786,11 @@
               "
             ></textarea>
           </div>
-          <div class="w-1/2 pt-3 text-center mx-auto">
+          <div class="w-100 pt-3 text-center mx-auto">
             <input
               type="submit"
               class="
+                w-full
                 rounded-xl
                 border border-pink-500
                 px-5

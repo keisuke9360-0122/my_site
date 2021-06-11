@@ -1,0 +1,52 @@
+// 修正前
+
+.profile-text {
+  width: 50%;
+  pointer-events: none;
+  :hover {
+    opacity: 0.5;
+    + .text-contents {
+      opacity: 1;
+    }
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: 2s;
+  }
+  .text-contents {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    opacity: 0;
+    transition: 2s;
+    pointer-events: auto;
+  }
+}
+
+// 修正後
+
+.profile-text {
+  width: 50%;
+  opacity: 1;
+  :hover {
+    opacity: 0.3;
+    + .text-contents {
+      opacity: 1;
+    }
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+
+    transition: 2s;
+  }
+  .text-contents {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    opacity: 0;
+    transition: 2s;
+  }
+}

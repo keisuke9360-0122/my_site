@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  $(".wrap").slideUp(2000);
+  $(".wrap").fadeOut(2000);
 });
 $(function () {
   $(window).scroll(function () {
@@ -7,7 +7,7 @@ $(function () {
       const position = $(this).offset().top;
       const scroll = $(window).scrollTop();
       const windowHeight = $(window).height();
-      if (scroll > position - windowHeight + 200) {
+      if (scroll > position - windowHeight + 100) {
         $(this).addClass("active");
       }
     });
@@ -37,9 +37,9 @@ $(window).on("load", function () {
   //=====ここまでローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
 
   //=====ここから背景が伸びた後に動かしたいJSをまとめたい場合は
-  $(".splashbg").on("animationend", function () {
-    //この中に動かしたいJSを記載
-  });
+  // $(".splashbg").on("animationend", function () {
+  //   //この中に動かしたいJSを記載
+  // });
   //=====ここまで背景が伸びた後に動かしたいJSをまとめる
 });
 
