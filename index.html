@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+    <link rel="stylesheet" href="/css/style.css" />
     <div class="wrap w-full opacity-100">
       <p
         class="
@@ -31,100 +32,182 @@
         BeP
       </p>
     </div>
-    <div class="top-container relative w-full">
-      <img src="./img/IMG_0550.jpeg" alt="" />
-      <div class="nav-var absolute inset-0 flex justify-around text-pink-500">
-        <p class="section-title text-2xl leading-tight text-pink-500 mt-1">
-          BeP creative studio
-        </p>
-        <ul class="nav-menu flex mt-1" id="page-link">
-          <li>
-            <a
-              href="#area-1"
+    <div class="top-container md:relative mt-16 md:mt-0">
+      <div
+        id="top"
+        class="
+          flex flex-col
+          absolute
+          w-full
+          fixed
+          bg-white
+          pin-t pin-r pin-l
+          top-0
+        "
+      >
+        <nav
+          id="site-menu"
+          class="
+            flex flex-col
+            sm:flex-row
+            w-full
+            justify-between
+            items-center
+            px-4
+            sm:px-6
+            py-1
+            bg-white
+            shadow
+            sm:shadow-none
+            border-b-4 border-teal-500
+          "
+        >
+          <div
+            class="
+              w-full
+              sm:w-auto
+              self-start
+              sm:self-center
+              flex flex-row
+              sm:flex-none
+              flex-no-wrap
+              justify-between
+              items-center
+            "
+          >
+            <p
               class="
-                px-4
-                transform
-                transition
-                duration-700
-                hover:scale-100
-                hover:bg-pink-500
-                rounded-3xl
-                ease-in-out
-                hover:text-white
+                section-title
+                text-2xl
+                leading-tight
+                text-pink-500
+                lg:fixed
+                lg:top-0
               "
-              >About site</a
             >
-          </li>
-          <li>
-            <a
-              href="#area-2"
-              class="
-                px-4
-                transform
-                transition
-                duration-700
-                hover:scale-100
-                hover:bg-pink-500
-                rounded-3xl
-                ease-in-out
-                hover:text-white
-              "
-              >Web production</a
+              BeP creative studio
+            </p>
+            <button
+              id="menuBtn"
+              class="hamburger block sm:hidden focus:outline-none"
+              type="button"
+              onclick="navToggle()"
             >
-          </li>
-          <li>
-            <a
-              href="#area-3"
-              class="
-                px-4
-                transform
-                transition
-                duration-700
-                hover:scale-100
-                hover:bg-pink-500
-                rounded-3xl
-                ease-in-out
-                hover:text-white
-              "
-              >Photo garally</a
-            >
-          </li>
-          <li>
-            <a
-              href="#area-4"
-              class="
-                px-4
-                transform
-                transition
-                duration-700
-                hover:scale-100
-                hover:bg-pink-500
-                rounded-3xl
-                ease-in-out
-                hover:text-white
-              "
-              >Hair</a
-            >
-          </li>
-          <li>
-            <a
-              href="#area-5"
-              class="
-                px-4
-                transform
-                transition
-                duration-700
-                hover:scale-100
-                hover:bg-pink-500
-                rounded-3xl
-                ease-in-out
-                hover:text-white
-              "
-              >contuct</a
-            >
-          </li>
-        </ul>
+              <span class="hamburger__top-bun"></span
+              ><span class="hamburger__bottom-bun"></span>
+            </button>
+          </div>
+          <div
+            id="menu"
+            class="
+              w-full
+              sm:w-auto
+              self-end
+              sm:self-center
+              sm:flex
+              flex-col
+              sm:flex-row
+              items-center
+              h-full
+              py-1
+              pb-4
+              sm:py-0
+              sm:pb-0
+              hidden
+            "
+          >
+            <ul class="nav-menu lg:flex lg:flex-grow" id="page-link">
+              <li>
+                <a
+                  href="#area-1"
+                  class="
+                    px-4
+                    transform
+                    transition
+                    duration-700
+                    hover:scale-100
+                    hover:bg-pink-500
+                    rounded-3xl
+                    ease-in-out
+                    hover:text-white
+                  "
+                  >About site</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#area-2"
+                  class="
+                    px-4
+                    transform
+                    transition
+                    duration-700
+                    hover:scale-100
+                    hover:bg-pink-500
+                    rounded-3xl
+                    ease-in-out
+                    hover:text-white
+                  "
+                  >Web production</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#area-3"
+                  class="
+                    px-4
+                    transform
+                    transition
+                    duration-700
+                    hover:scale-100
+                    hover:bg-pink-500
+                    rounded-3xl
+                    ease-in-out
+                    hover:text-white
+                  "
+                  >Photo garally</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#area-4"
+                  class="
+                    px-4
+                    transform
+                    transition
+                    duration-700
+                    hover:scale-100
+                    hover:bg-pink-500
+                    rounded-3xl
+                    ease-in-out
+                    hover:text-white
+                  "
+                  >Hair</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#area-5"
+                  class="
+                    px-4
+                    transform
+                    transition
+                    duration-700
+                    hover:scale-100
+                    hover:bg-pink-500
+                    rounded-3xl
+                    ease-in-out
+                    hover:text-white
+                  "
+                  >contuct</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
+
+      <!-- </div> -->
       <a href="#area-1" class="scrolldown">
         <span></span>
         <span></span>
@@ -133,17 +216,25 @@
     </div>
 
     <section>
-      <div id="splash">
+      <div id="splash" class="h-full">
         <!-- <div id="splash-logo">ローディング</div> -->
         <!--/splash-->
       </div>
-      <div class="splashbg"></div>
+      <div class="splashbg h-screen"></div>
       <!---画面遷移用-->
       <div id="container">
-        <div class="plofile-container relative flex" id="area-1">
-          <div class="profile-text relative">
-            <img src="./img/IMG_8029.jpeg" alt="" />
-            <div class="text-contents absolute text-center text-gray-900 p-20">
+        <div class="plofile-container relative md:flex" id="area-1">
+          <div class="profile-text md:w-1/2 w-full relative h-full">
+            <img class="md:ofject-cover" src="./img/IMG_8029.jpeg" alt="" />
+            <div
+              class="
+                text-contents
+                absolute
+                text-center text-gray-900
+                md:p-20
+                h-full
+              "
+            >
               <div class="my-20">ABOUT SITE</div>
               <p class="my-20 text-xl">
                 美容師、フォトグラファー、フロントエンドエンジニアである私が手掛けたフォト作品、お客様のヘアスタイル、web制作物をまとめたポートフォリオサイトです。
@@ -154,8 +245,8 @@
               </p>
             </div>
           </div>
-          <div class="profile-image relative">
-            <img src="./img/IMG_8083.jpeg" alt="" />
+          <div class="profile-image h-full relative w-full md:w-1/2">
+            <img class="md:ofject-cover" src="./img/IMG_8083.jpeg" alt="" />
             <div class="img-circle">
               <span
                 class="
@@ -193,7 +284,6 @@
                 "
                 >web</span
               >
-              <!-- <div class="image-circle absolute"></div> -->
             </div>
           </div>
           <a href="#area-2" class="scrolldown">
@@ -205,12 +295,13 @@
         <!--/container-->
       </div>
     </section>
-    　　
-    <div class="relative mb-10 h-full bg-gray-100 fadein" id="area-2">
+    <div class="md:mb-10 md:h-screen fadein md:m-10" id="area-2">
       <!-- <div class="p-10 m-10 bg-gray-100 w-100"> -->
-      <h3 class="section-title text-center tracking-wide">Web Work</h3>
-      <div class="slide-list-container">
-        <div class="slide-list my-20">
+      <h2 class="section-title text-center tracking-wide md:text-4xl my-2">
+        Web Work
+      </h2>
+      <div class="slide-list-container bg-gray-100 mb-20">
+        <div class="slide-list md:my-10">
           <div class="slide-item works-image">
             <!-- <div class=""> -->
             <div class="image-item">
@@ -322,10 +413,10 @@
       </a>
     </div>
 
-    <div class="photo-works fadein" id="area-3">
-      <h2 class="section-title text-center text-4xl">Photo works</h2>
+    <div class="photo-works fadein md:mb-10" id="area-3">
+      <h2 class="section-title text-center md:text-4xl">Photo works</h2>
       <div class="main-image02 border-0">
-        <div class="swiper-container main-image02__body">
+        <div class="swiper-container main-image02__body my-10">
           <ul class="swiper-wrapper main-image02__list">
             <li class="swiper-slide main-image02__item">
               <a
@@ -431,12 +522,13 @@
         <span></span>
       </a>
     </div>
-    <div class="hair-works m-10" id="area-4">
-      <h2 class="section-title text-center text-4xl">Hair works</h2>
+    <div class="hair-works fadein md:h-screen p-20" id="area-4">
+      <h2 class="section-title text-center md:text-4xl my-12">Hair works</h2>
       <div
         class="
-          grid grid-rows-4 grid-cols-6
-          h-screen
+          grid
+          md:grid-rows-4 md:grid-cols-6
+          grid-rows-20 grid-cols-2
           min-w-full
           gap-6
           place-items-center
@@ -446,8 +538,10 @@
         <div
           class="
             hover:opacity-50
+            md:row-span-2
+            md:col-span-1
             row-span-2
-            col-span-1
+            col-span-2
             bg-gray-100
             w-100
             h-100
@@ -469,7 +563,15 @@
           </div>
         </div>
         <div
-          class="hover:opacity-50 row-span-1 col-span-1 bg-gray-200 opacity-0"
+          class="
+            hover:opacity-50
+            md:row-span-1
+            md:col-span-1
+            row-span-2
+            col-span-2
+            bg-gray-200
+            opacity-0
+          "
         >
           <div class="image-container flex items-center">
             <a
@@ -486,7 +588,16 @@
           </div>
         </div>
         <div
-          class="category-text row-span-4 col-span-2 h-full w-full opacity-0"
+          class="
+            category-text
+            md:row-span-4
+            md:col-span-2
+            row-span-4
+            col-span-2
+            h-full
+            w-full
+            opacity-0
+          "
         >
           <div class="leading-10">
             <ul class="length-container tracking-widest text-center m-8">
@@ -620,42 +731,17 @@
               </li>
             </ul>
           </div>
-          <a href="#area-5" class="scrolldown">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
         </div>
         <div
-          class="hover:opacity-50 row-span-2 col-span-2 bg-gray-500 opacity-0"
-        >
-          <a
-            href="./img/comming_soon.png"
-            class="image"
-            data-modaal-desc="画像4"
-          >
-            <img
-              src="./img/comming_soon.png"
-              class="object-cover h-100 w-100"
-              alt=""
-            />
-          </a>
-        </div>
-        <div class="hover:opacity-50 row-span-1 col-span-1 bg-gray-300">
-          <a
-            href="./img/comming_soon.png"
-            class="image"
-            data-modaal-desc="画像4"
-          >
-            <img
-              src="./img/comming_soon.png"
-              class="object-cover h-100 w-100"
-              alt=""
-            />
-          </a>
-        </div>
-        <div
-          class="hover:opacity-50 row-span-2 col-span-2 bg-gray-600 opacity-0"
+          class="
+            hover:opacity-50
+            md:row-span-2
+            md:col-span-2
+            bg-gray-500
+            opacity-0
+            row-span-2
+            col-span-2
+          "
         >
           <a
             href="./img/comming_soon.png"
@@ -670,7 +756,14 @@
           </a>
         </div>
         <div
-          class="hover:opacity-50 row-span-2 col-span-2 bg-gray-700 opacity-0"
+          class="
+            hover:opacity-50
+            md:row-span-1
+            md:col-span-1
+            bg-gray-300
+            row-span-2
+            col-span-2
+          "
         >
           <a
             href="./img/comming_soon.png"
@@ -684,18 +777,74 @@
             />
           </a>
         </div>
-        <!-- <a href="#area-5" class="scrolldown">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a> -->
+        <div
+          class="
+            hover:opacity-50
+            md:row-span-2
+            md:col-span-2
+            bg-gray-600
+            opacity-0
+            row-span-2
+            col-span-2
+          "
+        >
+          <a
+            href="./img/comming_soon.png"
+            class="image"
+            data-modaal-desc="画像4"
+          >
+            <img
+              src="./img/comming_soon.png"
+              class="object-cover h-100 w-100"
+              alt=""
+            />
+          </a>
+        </div>
+        <div
+          class="
+            hover:opacity-50
+            md:row-span-2
+            md:col-span-2
+            bg-gray-700
+            opacity-0
+            row-span-2
+            col-span-2
+          "
+        >
+          <a
+            href="./img/comming_soon.png"
+            class="image"
+            data-modaal-desc="画像4"
+          >
+            <img
+              src="./img/comming_soon.png"
+              class="object-cover h-100 w-100"
+              alt=""
+            />
+          </a>
+        </div>
       </div>
+      <a href="#area-5" class="scrolldown">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
     </div>
-    <form action="" id="area-5" class="h-screen fadein">
-      <div class="form-section flex px-10 py-20">
-        <div class="contact-text w-1/2 text-center leading-10 px-10">
-          <div class="flex">
-            <div class="w-2/4">
+    <form action="" id="area-5" class="md:h-screen fadein">
+      <div class="form-section md:flex md:px-10 md:py-20">
+        <div
+          class="
+            contact-text
+            md:w-1/2
+            text-center
+            leading-10
+            md:px-10
+            my-20
+            md:my-none
+          "
+        >
+          <div class="md:flex">
+            <div class="w-1/2 mx-auto md:w-2/4">
               <p class="border rounded-full border-pink-600">
                 <img
                   src="./img/IMG_1458.jpeg"
@@ -704,25 +853,14 @@
                 />
               </p>
             </div>
-            <div class="w-2/4 px-4">
+            <div class="w-full md:w-2/4 px-4">
               <p class="my-4">profile</p>
               <p class="text-base">
                 福岡県出身。福岡市内の美容学校卒業のち都内ヘアサロンに就職。雑誌やwebの広告撮影なども経験し、10年勤務後福岡に戻り、かねてより興味のあったエンジニアの勉強を始める。美容、写真、web制作を組み合わせた新しい価値観を生み出すために活動中。趣味は、サッカー観戦やアウトドア全般。
               </p>
             </div>
           </div>
-          <div class="mt-20 flex">
-            <div class="leading-10">
-              <!-- <p class="inline-block mx-10">mail</p>
-              <p class="inline-block mx-10">
-                <a href="mailto:keitsuru0122@gmail.com"
-                  >keitsuru0122@gmail.com</a
-                >
-              </p>
-              <br />
-              <p class="inline-block mx-10">phone</p>
-              <p class="inline-block mx-20">090-9851-0639</p> -->
-            </div>
+          <div class="md:mt-20 mt-10 flex">
             <div class="sns-icon mx-auto flex items-center">
               <a
                 href="#"
@@ -813,9 +951,13 @@
       </div>
     </form>
     <footer>
-      <div class="flex h-20 bg-pink-500 text-white pt-8">
-        <p class="w-4/12 text-xl pl-10 items-center">BeP creative studio</p>
-        <span class="w-4/12 text-center">©bep creative studio</span>
+      <div class="md:flex md:h-20 bg-pink-500 text-white pt-8">
+        <p class="w-full md:w-4/12 text-xl md:pl-10 text-center items-center">
+          BeP creative studio
+        </p>
+        <span class="block text-center md:w-4/12 text-center"
+          >©bep creative studio</span
+        >
       </div>
     </footer>
     <script src="swiper.min.js"></script>

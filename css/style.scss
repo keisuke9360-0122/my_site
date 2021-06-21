@@ -1,18 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Nobile:wght@700&display=swap");
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
 }
-body img {
-  user-select: none;
-  line-height:1;
-}
+// body img {
+//   user-select: none;
+//   line-height:1;
+// }
 .fadein {
   opacity: 0;
-  transform: translate(0, 100px);
+  transform: translate(0, 20px);
   transition: all 1s;
 }
-
+.top-container {
+  background-image: url(../img/IMG_0550.jpeg);
+  height:0;
+  padding-top:66.6%;
+  width:100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .fadein.active {
   opacity: 1;
   transform: translate(0, 0);
@@ -24,9 +31,74 @@ body img {
   grid-template-columns: 100vw;
   grid-template-rows: 100vh;
 }
-.top-container img {
-  object-fit: cover;
-  width: 100%;
+@media (max-width: 576px) {
+  .content {
+      padding-top: 51px;
+  }
+}
+
+@media (min-width: 577px) {
+.pt-scroll {
+  padding-top: 51px;
+}
+
+.nav-sticky {
+  position: fixed!important;
+  min-width: 100%;
+  top: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+  transition: all .25s ease-in;
+  z-index: 1;
+}
+}
+
+/* HAMBURGER MENU */
+
+.hamburger {
+cursor: pointer;
+width: 48px;
+height: 48px;
+transition: all 0.25s;
+}
+
+.hamburger__top-bun,
+.hamburger__bottom-bun {
+content: '';
+position: absolute;
+width: 24px;
+height: 2px;
+background: #000;
+transform: rotate(0);
+transition: all 0.5s;
+}
+
+.hamburger:hover [class*="-bun"] {
+background: #333;
+}
+
+.hamburger__top-bun {
+transform: translateY(-5px);
+}
+
+.hamburger__bottom-bun {
+transform: translateY(3px);
+}
+
+.open {
+transform: rotate(90deg);
+transform: translateY(-1px);
+}
+
+.open .hamburger__top-bun {
+transform:
+  rotate(45deg)
+  translateY(0px);
+}
+
+.open .hamburger__bottom-bun {
+transform:
+  rotate(-45deg)
+  translateY(0px);
 }
 .section-title {
   font-family: "Nobile", sans-serif;
@@ -43,7 +115,7 @@ body img {
     position: absolute;
     display: block;
     margin-bottom: 0px;
-    bottom: 70px;
+    bottom: 10px;
     left: 50%;
     width: 20px;
     height: 20px;
@@ -93,26 +165,26 @@ body img {
   color: #fff;
 }
 
-#splash-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+// #splash-logo {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
 
 /*画面遷移アニメーション*/
-.splashbg {
-  display: none;
-}
+// .splashbg {
+//   display: none;
+// }
 
 /*bodyにappearクラスがついたら出現*/
 section.appear .splashbg {
   display: block;
-  content: "";
+  // content: "";
   position: fixed;
   z-index: 999;
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
   top: 0;
   left: 0;
   transform: scaleX(0);
@@ -169,17 +241,17 @@ section.appear #container {
   // height: 1000px;
   width: 100%;
   .profile-text {
-    width: 50%;
+   
     // opacity: 1;
     // :hover {
     //   opacity: 0.3;
-    //   // + .text-contents {
+    //   // +  // width: 50%;.text-contents {
 
     //   // }
     // }
     img {
-      width: 100%;
-      object-fit: cover;
+      // width: 100%;
+      // object-fit: cover;
 
       transition: 2s;
     }
@@ -204,7 +276,7 @@ section.appear #container {
     opacity: 1; /* マスクを表示する */
   }
   .profile-image {
-    width: 50%;
+    // width: 50%;
     // :hover {
     //   opacity: 0.3;
     //   + .img-circle span {
@@ -219,8 +291,8 @@ section.appear #container {
     // }
 
     img {
-      width: 100%;
-      object-fit: cover;
+      // width: 100%;
+      // object-fit: cover;
       // opacity: 1;
       transition: 2s;
     }
@@ -233,10 +305,6 @@ section.appear #container {
     //
     // }
     .img-circle {
-      
-      
-      
-      
       opacity: 0;
       transition: 2s;
       width: 100%;
@@ -248,33 +316,33 @@ section.appear #container {
       background-color: rgba(252, 248, 248, 0.4); /* マスクは半透明 */
       -webkit-transition: all 0.2s ease;
       transition: all 2s ease;
-    
-    span:nth-of-type(1) {
-      display: block;
-      top: 30%;
-      left: 50%;
-      border: 2px solid white;
-      // opacity: 0;
-      transition: 2s;
-      transform: translateY(-50%) translateX(-50%);
+
+      span:nth-of-type(1) {
+        // display: block;
+        top: 30%;
+        left: 50%;
+        border: 2px solid white;
+        // opacity: 0;
+        transition: 2s;
+        transform: translateY(-50%) translateX(-50%);
+      }
+      span:nth-of-type(2) {
+        bottom: 30%;
+        left: 70%;
+        border: 2px solid white;
+        // opacity: 0;
+        transition: 2s;
+        transform: translateY(-50%) translateX(-50%);
+      }
+      span:nth-of-type(3) {
+        bottom: 30%;
+        left: 30%;
+        border: 2px solid white;
+        // opacity: 0;
+        transition: 2s;
+        transform: translateY(-50%) translateX(-50%);
+      }
     }
-    span:nth-of-type(2) {
-      bottom: 30%;
-      left: 70%;
-      border: 2px solid white;
-      // opacity: 0;
-      transition: 2s;
-      transform: translateY(-50%) translateX(-50%);
-    }
-    span:nth-of-type(3) {
-      bottom: 30%;
-      left: 30%;
-      border: 2px solid white;
-      // opacity: 0;
-      transition: 2s;
-      transform: translateY(-50%) translateX(-50%);
-    }
-  }
   }
 }
 .profile-image:hover .img-circle {
@@ -286,7 +354,27 @@ section.appear #container {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   width: 100%;
-  margin: 0;
+  margin-top: 0;
+}
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+  .works-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+  .works-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    margin-top: 0;
+  }
 }
 .image-item {
   margin: 20px;
@@ -323,7 +411,7 @@ section.appear #container {
 //   height:100%;
 // }
 .slide-list-container {
-  width: 1200px;
+  max-width: 1200px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -385,7 +473,7 @@ section.appear #container {
 }
 
 .main-image02 {
-  margin: 50px auto;
+  margin: 0 auto;
   padding: 10px;
   max-width: 100%;
 

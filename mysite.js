@@ -1,6 +1,35 @@
 document.addEventListener("DOMContentLoaded", () => {
   $(".wrap").fadeOut(2000);
 });
+const nav = document.getElementById("site-menu");
+const header = document.getElementById("top");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 400) {
+    // adjust this value based on site structure and header image height
+    nav.classList.add("nav-sticky");
+    header.classList.add("pt-scroll");
+  } else {
+    nav.classList.remove("nav-sticky");
+    header.classList.remove("pt-scroll");
+  }
+});
+
+function navToggle() {
+  const btn = document.getElementById("menuBtn");
+  const nav = document.getElementById("menu");
+
+  btn.classList.toggle("open");
+  // nav.classList.toggle("flex");
+  nav.classList.toggle("hidden");
+ 
+nav.addEventListener('click', function(){
+  nav.classList.add('fadeout');
+  setTimeout(function(){ 
+    nav.style.display = "none"; 
+  }, 2000);
+}, false
+)}
 $(function () {
   $(window).scroll(function () {
     $(".fadein").each(function () {
@@ -12,7 +41,29 @@ $(function () {
       }
     });
   });
+  $(function () {
+    // hover
+    var userAgent = navigator.userAgent;
+    var item = $("a").add("button");
   
+    if (userAgent.indexOf("iPhone") >= 0 || userAgent.indexOf("iPad") >= 0 || userAgent.indexOf("Android") >= 0) {
+      item.on("touchstart", function () {
+        $(this).addClass("hover");
+      });
+      item.on("touchend", function () {
+        $(this).removeClass("hover");
+      });
+    } else {
+      item.hover(
+        function () {
+          $(this).addClass("hover");
+        },
+        function () {
+          $(this).removeClass("hover");
+        }
+      );
+    }
+  });
 });
 
 $('#page-link a[href*="#"]').click(function () {
@@ -21,7 +72,6 @@ $('#page-link a[href*="#"]').click(function () {
   $("body,html").animate({ scrollTop: pos }, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
   return false;
 });
-
 
 $(window).on("load", function () {
   $("#splash-logo").delay(1200).fadeOut("slow"); //ロゴを1.2秒でフェードアウトする記述
