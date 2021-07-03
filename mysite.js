@@ -5,7 +5,7 @@ const nav = document.getElementById("site-menu");
 const header = document.getElementById("top");
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY >= 400) {
+  if (window.scrollY >= 100) {
     // adjust this value based on site structure and header image height
     nav.classList.add("nav-sticky");
     header.classList.add("pt-scroll");
@@ -14,22 +14,20 @@ window.addEventListener("scroll", function () {
     header.classList.remove("pt-scroll");
   }
 });
-
+// $(function(){
+//   $('#menuBtn').on('click',function(){
+//     // $('#menuBtn').toggle('open');
+//     $('#menu').toggle(700);
+//   })
+// })
 function navToggle() {
   const btn = document.getElementById("menuBtn");
-  const nav = document.getElementById("menu");
+  const nab = document.getElementById("menu");
 
   btn.classList.toggle("open");
-  // nav.classList.toggle("flex");
-  nav.classList.toggle("hidden");
- 
-nav.addEventListener('click', function(){
-  nav.classList.add('fadeout');
-  setTimeout(function(){ 
-    nav.style.display = "none"; 
-  }, 2000);
-}, false
-)}
+  nab.classList.toggle("flex");
+  nab.classList.toggle("hidden");
+}
 $(function () {
   $(window).scroll(function () {
     $(".fadein").each(function () {
@@ -45,8 +43,12 @@ $(function () {
     // hover
     var userAgent = navigator.userAgent;
     var item = $("a").add("button");
-  
-    if (userAgent.indexOf("iPhone") >= 0 || userAgent.indexOf("iPad") >= 0 || userAgent.indexOf("Android") >= 0) {
+
+    if (
+      userAgent.indexOf("iPhone") >= 0 ||
+      userAgent.indexOf("iPad") >= 0 ||
+      userAgent.indexOf("Android") >= 0
+    ) {
       item.on("touchstart", function () {
         $(this).addClass("hover");
       });
@@ -68,8 +70,14 @@ $(function () {
 
 $('#page-link a[href*="#"]').click(function () {
   let elmHash = $(this).attr("href"); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
+  let hab = document.getElementById("menu");
+  let closeBtn = document.getElementById("menuBtn");
   let pos = $(elmHash).offset().top; //idの上部の距離を取得
-  $("body,html").animate({ scrollTop: pos }, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
+  $("body,html").animate({ scrollTop: pos - 90}, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
+  setTimeout(closeBtn.classList.toggle("open"), 2000);
+  setTimeout(hab.classList.toggle("flex"), 2000);
+  setTimeout(hab.classList.toggle("hidden"), 2000);
+
   return false;
 });
 
@@ -122,15 +130,15 @@ let galleryTop = new Swiper(".main-image02__body", {
   thumbs: {
     swiper: {
       el: ".main-image02-thumbs",
-      slidesPerView: 4,
+      slidesPerView: 3,
       loop: true,
-      spaceBetween: 10,
+      spaceBetween: 3,
       centerInsufficientSlides: true, // センター揃え
     },
   },
 });
 
-const swiper = new Swiper(".main-image02-thumbs", {
+let swiper = new Swiper(".main-image02-thumbs", {
   loop: true,
   slidesPerView: "auto",
   centeredSlides: true,
@@ -139,11 +147,11 @@ const swiper = new Swiper(".main-image02-thumbs", {
     prevEl: ".swiper-button-prev",
   },
 });
-(function () {
-  $(".main-image02-thumbs__item").on("click", function () {
-    $("li").classList.remove("swiper-slide-thumb-active");
-  });
-});
+// (function () {
+//   $(".main-image02-thumbs__item").on("click", function () {
+//     $("li").classList.remove("swiper-slide-thumb-active");
+//   });
+// });
 
 $(".image").modaal({
   type: "image",

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my portfolio</title>
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
     <link rel="stylesheet" href="/dist/tailwind.css" />
     <link rel="stylesheet" href="./css/swiper.min.css" />
     <link
@@ -33,18 +34,7 @@
       </p>
     </div>
     <div class="top-container md:relative mt-16 md:mt-0">
-      <div
-        id="top"
-        class="
-          flex flex-col
-          absolute
-          w-full
-          fixed
-          bg-white
-          pin-t pin-r pin-l
-          top-0
-        "
-      >
+      <div id="top" class="flex flex-col absolute w-full bg-white top-0">
         <nav
           id="site-menu"
           class="
@@ -55,11 +45,11 @@
             items-center
             px-4
             sm:px-6
-            py-1
             bg-white
             shadow
             sm:shadow-none
             border-b-4 border-teal-500
+            py-4
           "
         >
           <div
@@ -75,16 +65,7 @@
               items-center
             "
           >
-            <p
-              class="
-                section-title
-                text-2xl
-                leading-tight
-                text-pink-500
-                lg:fixed
-                lg:top-0
-              "
-            >
+            <p class="section-title text-3xl leading-tight text-pink-500">
               BeP creative studio
             </p>
             <button
@@ -103,20 +84,18 @@
               w-full
               sm:w-auto
               self-end
-              sm:self-center
-              sm:flex
+              sm:self-center sm:flex
               flex-col
               sm:flex-row
               items-center
               h-full
               py-1
               pb-4
-              sm:py-0
-              sm:pb-0
+              sm:py-0 sm:pb-0
               hidden
             "
           >
-            <ul class="nav-menu lg:flex lg:flex-grow" id="page-link">
+            <ul class="nav-menu md:flex md:flex-grow" id="page-link">
               <li>
                 <a
                   href="#area-1"
@@ -125,8 +104,7 @@
                     transform
                     transition
                     duration-700
-                    hover:scale-100
-                    hover:bg-pink-500
+                    hover:scale-100 hover:bg-pink-500
                     rounded-3xl
                     ease-in-out
                     hover:text-white
@@ -142,8 +120,7 @@
                     transform
                     transition
                     duration-700
-                    hover:scale-100
-                    hover:bg-pink-500
+                    hover:scale-100 hover:bg-pink-500
                     rounded-3xl
                     ease-in-out
                     hover:text-white
@@ -159,8 +136,7 @@
                     transform
                     transition
                     duration-700
-                    hover:scale-100
-                    hover:bg-pink-500
+                    hover:scale-100 hover:bg-pink-500
                     rounded-3xl
                     ease-in-out
                     hover:text-white
@@ -176,8 +152,7 @@
                     transform
                     transition
                     duration-700
-                    hover:scale-100
-                    hover:bg-pink-500
+                    hover:scale-100 hover:bg-pink-500
                     rounded-3xl
                     ease-in-out
                     hover:text-white
@@ -193,13 +168,12 @@
                     transform
                     transition
                     duration-700
-                    hover:scale-100
-                    hover:bg-pink-500
+                    hover:scale-100 hover:bg-pink-500
                     rounded-3xl
                     ease-in-out
                     hover:text-white
                   "
-                  >contuct</a
+                  >profile & contuct</a
                 >
               </li>
             </ul>
@@ -223,7 +197,7 @@
       <div class="splashbg h-screen"></div>
       <!---画面遷移用-->
       <div id="container">
-        <div class="plofile-container relative md:flex" id="area-1">
+        <div class="plofile-container relative md:flex md:mb-12" id="area-1">
           <div class="profile-text md:w-1/2 w-full relative h-full">
             <img class="md:ofject-cover" src="./img/IMG_8029.jpeg" alt="" />
             <div
@@ -231,32 +205,37 @@
                 text-contents
                 absolute
                 text-center text-gray-900
-                md:p-20
+                lg:p-20
                 h-full
+                text-md
+                p-12
+                opacity-100
+                md:opacity-0
               "
             >
-              <div class="my-20">ABOUT SITE</div>
-              <p class="my-20 text-xl">
+              <p class="my-8 lg:my-20 section-title">ABOUT SITE</p>
+              <p class="my-12 lg:my-20 md:text-xl">
                 美容師、フォトグラファー、フロントエンドエンジニアである私が手掛けたフォト作品、お客様のヘアスタイル、web制作物をまとめたポートフォリオサイトです。
               </p>
-              <p class="my-20 text-xl">『イメージを形にする』</p>
-              <p class="text-xl">
+              <p class="my-12 lg:my-20 md:text-xl">『イメージを形にする』</p>
+              <p class="lg:text-xl">
                 新しい価値観をこのサイトを通じてと皆様と創造できたら思います。
               </p>
             </div>
           </div>
           <div class="profile-image h-full relative w-full md:w-1/2">
             <img class="md:ofject-cover" src="./img/IMG_8083.jpeg" alt="" />
-            <div class="img-circle">
+            <div class="img-circle opacity-100 md:opacity-0">
               <span
                 class="
                   h-28
                   w-28
                   rounded-full
                   absolute
-                  bg-yellow-300
                   text-center
                   pt-10
+                  section-title
+                  text-gray-600 text-2xl
                 "
                 >hair</span
               >
@@ -266,9 +245,10 @@
                   w-28
                   rounded-full
                   absolute
-                  bg-green-500
                   text-center
                   pt-10
+                  section-title
+                  text-gray-600 text-2xl
                 "
                 >photo</span
               >
@@ -278,9 +258,10 @@
                   w-28
                   rounded-full
                   absolute
-                  bg-purple-500
                   text-center
                   pt-10
+                  section-title
+                  text-gray-600 text-2xl
                 "
                 >web</span
               >
@@ -295,7 +276,7 @@
         <!--/container-->
       </div>
     </section>
-    <div class="md:mb-10 md:h-screen fadein md:m-10" id="area-2">
+    <div class="mb-4 md:mb-10 lg:h-screen fadein md:m-10" id="area-2">
       <!-- <div class="p-10 m-10 bg-gray-100 w-100"> -->
       <h2 class="section-title text-center tracking-wide md:text-4xl my-2">
         Web Work
@@ -397,16 +378,14 @@
         <!-- </div> -->
       </div>
       <div class="prev-next-box">
-        　
         <p class="prev">
-          <span class="fas fa-2x fa-angle-double-left text-yellow-200"></span>
+          <span class="fas fa-2x fa-angle-double-left"></span>
         </p>
-        　
         <p class="next">
-          <span class="fas fa-2x fa-angle-double-right text-yellow-200"></span>
+          <span class="fas fa-2x fa-angle-double-right"></span>
         </p>
       </div>
-      <a href="#area-3" class="scrolldown">
+      <a href="#area-3" class="scrolldown block h-20 md:h-0">
         <span></span>
         <span></span>
         <span></span>
@@ -414,7 +393,9 @@
     </div>
 
     <div class="photo-works fadein md:mb-10" id="area-3">
-      <h2 class="section-title text-center md:text-4xl">Photo works</h2>
+      <h2 class="photo-slice section-title text-center md:text-4xl">
+        Photo works
+      </h2>
       <div class="main-image02 border-0">
         <div class="swiper-container main-image02__body my-10">
           <ul class="swiper-wrapper main-image02__list">
@@ -475,8 +456,8 @@
               </a>
             </li>
           </ul>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next focus:outline-none"></div>
+          <div class="swiper-button-prev focus:outline-none"></div>
         </div>
         <div class="swiper-container main-image02-thumbs mb-24">
           <ul class="swiper-wrapper main-image-thumbs__list">
@@ -522,15 +503,16 @@
         <span></span>
       </a>
     </div>
-    <div class="hair-works fadein md:h-screen p-20" id="area-4">
+    <div class="hair-works fadein px-4 h-full" id="area-4">
       <h2 class="section-title text-center md:text-4xl my-12">Hair works</h2>
       <div
         class="
           grid
           md:grid-rows-4 md:grid-cols-6
           grid-rows-20 grid-cols-2
-          min-w-full
-          gap-6
+          min-w-full min-h-screen
+          md:gap-6
+          gap-2
           place-items-center
           randomScroll
         "
@@ -538,14 +520,16 @@
         <div
           class="
             hover:opacity-50
-            md:row-span-2
-            md:col-span-1
-            row-span-2
-            col-span-2
+            md:row-span-2 md:col-span-1
+            row-span-1
+            col-span-1
             bg-gray-100
             w-100
             h-100
             opacity-0
+            order-0
+            md:order-none
+            focus:outline-none
           "
         >
           <div class="image-container">
@@ -555,7 +539,7 @@
               data-modaal-desc="画像4"
             >
               <img
-                src="./img/comming_soon.png"
+                src="./img/IMG_1458.jpeg"
                 class="object-cover w-100"
                 alt=""
               />
@@ -565,12 +549,14 @@
         <div
           class="
             hover:opacity-50
-            md:row-span-1
-            md:col-span-1
-            row-span-2
-            col-span-2
+            md:row-span-1 md:col-span-1
+            row-span-1
+            col-span-1
             bg-gray-200
             opacity-0
+            order-1
+            md:order-none
+            focus:outline-none
           "
         >
           <div class="image-container flex items-center">
@@ -580,7 +566,7 @@
               data-modaal-desc="画像4"
             >
               <img
-                src="./img/comming_soon.png"
+                src="./img/IMG_1458.jpeg"
                 class="object-cover h-100 w-100"
                 alt=""
               />
@@ -590,29 +576,103 @@
         <div
           class="
             category-text
-            md:row-span-4
-            md:col-span-2
-            row-span-4
+            md:row-span-4 md:col-span-2
+            row-span-12
             col-span-2
             h-full
             w-full
             opacity-0
+            order-6
+            md:order-none
           "
         >
           <div class="leading-10">
-            <ul class="length-container tracking-widest text-center m-8">
-              <li><p>-length-</p></li>
+            <p class="text-center my-12 md:my-8 section-title">-length-</p>
+
+            <ul class="length-container tracking-widest text-center h-full">
               <li>
-                <a href="#short-garally" class="gallery-list"><p>Short</p></a>
+                <img
+                  class="md:hidden ofject-cover overflow-hidden"
+                  src="./img/IMG_1458.jpeg"
+                  alt=""
+                />
+                <div class="hair-mask">
+                  <a href="#short-garally" class="gallery-list"
+                    ><p
+                      class="
+                        md:border-0
+                        border border-pink-500
+                        rounded-2xl
+                        section-title
+                      "
+                    >
+                      Short
+                    </p></a
+                  >
+                </div>
               </li>
               <li>
-                <a href="#medium-garally" class="gallery-list"><p>Medium</p></a>
+                <img
+                  class="md:hidden ofject-cover overflow-hidden"
+                  src="./img/IMG_1458.jpeg"
+                  alt=""
+                />
+                <div class="hair-mask">
+                  <a href="#medium-garally" class="gallery-list"
+                    ><p
+                      class="
+                        md:border-0
+                        border border-pink-500
+                        rounded-2xl
+                        section-title
+                      "
+                    >
+                      Medium
+                    </p></a
+                  >
+                </div>
               </li>
               <li>
-                <a href="#long-garally" class="gallery-list"><p>Long</p></a>
+                <img
+                  class="md:hidden ofject-cover overflow-hidden"
+                  src="./img/IMG_1458.jpeg"
+                  alt=""
+                />
+                <div class="hair-mask">
+                  <a href="#long-garally" class="gallery-list"
+                    ><p
+                      class="
+                        md:border-0
+                        border border-pink-500
+                        rounded-2xl
+                        section-title
+                      "
+                    >
+                      Long
+                    </p></a
+                  >
+                </div>
               </li>
               <li>
-                <a href="#mens-garally" class="gallery-list"><p>Mens</p></a>
+                <img
+                  class="md:hidden ofject-cover overflow-hidden"
+                  src="./img/IMG_1458.jpeg"
+                  alt=""
+                />
+                <div class="hair-mask">
+                  <a href="#mens-garally" class="gallery-list"
+                    ><p
+                      class="
+                        md:border-0
+                        border border-pink-500
+                        rounded-2xl
+                        section-title
+                      "
+                    >
+                      Mens
+                    </p></a
+                  >
+                </div>
               </li>
             </ul>
             <section id="short-garally" class="hide-area">
@@ -703,8 +763,8 @@
                 >
               </p>
             </section>
-            <ul class="price-container text-center m-8 leading-8">
-              <li><p>-Price inTax-</p></li>
+            <ul class="price-container text-center md:my-16 mt-8">
+              <li class="my-12 md:my-8"><p>-Price inTax-</p></li>
               <li class="flex justify-around">
                 <p>cut</p>
                 <p>¥5000</p>
@@ -735,12 +795,14 @@
         <div
           class="
             hover:opacity-50
-            md:row-span-2
-            md:col-span-2
+            md:row-span-2 md:col-span-2
             bg-gray-500
             opacity-0
-            row-span-2
-            col-span-2
+            row-span-1
+            col-span-1
+            order-2
+            md:order-none
+            focus:outline-none
           "
         >
           <a
@@ -749,7 +811,7 @@
             data-modaal-desc="画像4"
           >
             <img
-              src="./img/comming_soon.png"
+              src="./img/IMG_1458.jpeg"
               class="object-cover h-100 w-100"
               alt=""
             />
@@ -758,11 +820,13 @@
         <div
           class="
             hover:opacity-50
-            md:row-span-1
-            md:col-span-1
+            md:row-span-1 md:col-span-1
             bg-gray-300
-            row-span-2
-            col-span-2
+            row-span-1
+            col-span-1
+            order-3
+            md:order-none
+            focus:outline-none
           "
         >
           <a
@@ -771,7 +835,7 @@
             data-modaal-desc="画像4"
           >
             <img
-              src="./img/comming_soon.png"
+              src="./img/IMG_1458.jpeg"
               class="object-cover h-100 w-100"
               alt=""
             />
@@ -780,12 +844,14 @@
         <div
           class="
             hover:opacity-50
-            md:row-span-2
-            md:col-span-2
+            md:row-span-2 md:col-span-2
             bg-gray-600
             opacity-0
-            row-span-2
-            col-span-2
+            row-span-1
+            col-span-1
+            order-4
+            md:order-none
+            focus:outline-none
           "
         >
           <a
@@ -794,7 +860,7 @@
             data-modaal-desc="画像4"
           >
             <img
-              src="./img/comming_soon.png"
+              src="./img/IMG_1458.jpeg"
               class="object-cover h-100 w-100"
               alt=""
             />
@@ -803,12 +869,14 @@
         <div
           class="
             hover:opacity-50
-            md:row-span-2
-            md:col-span-2
+            md:row-span-2 md:col-span-2
             bg-gray-700
             opacity-0
-            row-span-2
-            col-span-2
+            row-span-1
+            col-span-1
+            order-5
+            md:order-none
+            focus:outline-none
           "
         >
           <a
@@ -817,21 +885,24 @@
             data-modaal-desc="画像4"
           >
             <img
-              src="./img/comming_soon.png"
+              src="./img/IMG_1458.jpeg"
               class="object-cover h-100 w-100"
               alt=""
             />
           </a>
         </div>
       </div>
-      <a href="#area-5" class="scrolldown">
+      <a href="#area-5" class="scrolldown block h-20 md:h-0">
         <span></span>
         <span></span>
         <span></span>
       </a>
     </div>
-    <form action="" id="area-5" class="md:h-screen fadein">
-      <div class="form-section md:flex md:px-10 md:py-20">
+    <div id="area-5" class="lg:h-screen fadein">
+      <h2 class="section-title text-center md:text-4xl my-12">
+        profile & contact
+      </h2>
+      <div class="form-section md:flex lg:px-10 lg:py-20">
         <div
           class="
             contact-text
@@ -843,8 +914,8 @@
             md:my-none
           "
         >
-          <div class="md:flex">
-            <div class="w-1/2 mx-auto md:w-2/4">
+          <div class="lg:flex">
+            <div class="w-1/2 mx-auto lg:w-2/4">
               <p class="border rounded-full border-pink-600">
                 <img
                   src="./img/IMG_1458.jpeg"
@@ -853,26 +924,40 @@
                 />
               </p>
             </div>
-            <div class="w-full md:w-2/4 px-4">
-              <p class="my-4">profile</p>
+            <div class="w-full lg:w-2/4 px-4">
+              <p class="my-4">kei</p>
               <p class="text-base">
                 福岡県出身。福岡市内の美容学校卒業のち都内ヘアサロンに就職。雑誌やwebの広告撮影なども経験し、10年勤務後福岡に戻り、かねてより興味のあったエンジニアの勉強を始める。美容、写真、web制作を組み合わせた新しい価値観を生み出すために活動中。趣味は、サッカー観戦やアウトドア全般。
               </p>
             </div>
           </div>
-          <div class="md:mt-20 mt-10 flex">
+          <div class="lg:mt-20 mt-10 flex">
             <div class="sns-icon mx-auto flex items-center">
               <a
-                href="#"
+                href="https://www.instagram.com/tiger.kei"
                 class="mx-4 fab fa-2x fa-instagram-square hover:text-red-600"
               ></a>
-              <a href="#" class="mx-4 fab fa-2x fa-twitter hover:text-blue-400">
+              <a
+                href="https://twitter.com/kei07699080"
+                class="mx-4 fab fa-2x fa-twitter hover:text-blue-400"
+              >
               </a>
             </div>
           </div>
         </div>
-        <div class="contact-form w-full md:w-1/2 p-6 bg-gray-100">
-          <h2 class="bg-pink-500 text-center text-white py-4 mb-4">contact</h2>
+        <!-- <div class="contact-form w-full md:w-1/2 p-6 bg-gray-100">
+          <h2
+            class="
+              bg-pink-500
+              text-center text-white
+              md:py-4 md:mb-4
+              my-4
+              md:border
+              rounded-xl
+            "
+          >
+            contact
+          </h2>
           <div class="input-form flex flex-col mb-4">
             <p>
               お名前：
@@ -883,9 +968,8 @@
                   px-3
                   py-1
                   mx-auto
-                  border border-gray-900
-                  focus:border-pink-500
-                  focus:outline-none
+                  border-b border-gray-300
+                  focus:border-pink-500 focus:outline-none
                   w-full
                   mb-4
                 "
@@ -901,9 +985,8 @@
                 class="
                   px-4
                   py-1
-                  border border-gray-900
-                  focus:border-pink-500
-                  focus:outline-none
+                  border-b border-gray-300
+                  focus:border-pink-500 focus:outline-none
                   w-full
                   mb-4
                 "
@@ -918,9 +1001,8 @@
               class="
                 px-3
                 py-2
-                border border-gray-900
-                focus:border-pink-500
-                focus:outline-none
+                border border-gray-300
+                focus:border-pink-500 focus:outline-none
               "
             ></textarea>
           </div>
@@ -937,8 +1019,7 @@
                 duration-50
                 focus:outline-none
                 font-semibold
-                hover:bg-white
-                hover:text-pink-500
+                hover:bg-white hover:text-pink-500
                 text-base
                 cursor-pointer
                 bg-pink-500
@@ -947,17 +1028,149 @@
               value="送信する"
             />
           </div>
-        </div>
+        </div> -->
+
+        <!-- class, action, methodを変更しないでください -->
+        <form
+          class="formrun contact-form w-full md:w-1/2 p-6 bg-gray-100"
+          action="https://form.run/api/v1/r/c98b1nr2bk8gyzfndevbgtth"
+          method="post"
+        >
+          <!-- ↓自由に要素を追加・編集することができます -->
+          <h2
+            class="
+              section-title
+              text-gray-600 text-2xl
+              mx-auto
+              text-center
+              w-1/4
+              border-b border-pink-500
+              my-4
+            "
+          >
+            contact
+          </h2>
+          <div class="input-form flex flex-col mb-4">
+            <label>お名前</label>
+            <input
+              name="お名前"
+              type="text"
+              class="
+                px-3
+                py-1
+                mx-auto
+                border-b border-gray-300
+                focus:border-pink-500 focus:outline-none
+                w-full
+                mb-4
+              "
+            />
+          </div>
+
+          <div class="flex flex-col mb-4">
+            <label>メールアドレス [必須]</label>
+            <input
+              name="メールアドレス"
+              type="text"
+              data-formrun-type="email"
+              data-formrun-required
+              class="
+                px-4
+                py-1
+                border-b border-gray-300
+                focus:border-pink-500 focus:outline-none
+                w-full
+                mb-4
+              "
+            />
+            <div data-formrun-show-if-error="メールアドレス">
+              メールアドレスを正しく入力してください
+            </div>
+          </div>
+
+          <div class="flex flex-col mb-4">
+            <label>お問い合わせ [必須]</label>
+            <textarea
+              name="お問い合わせ"
+              data-formrun-required
+              class="
+                px-3
+                py-2
+                border border-gray-300
+                focus:border-pink-500 focus:outline-none
+              "
+            ></textarea>
+            <div data-formrun-show-if-error="お問い合わせ">
+              お問い合わせ入力してください
+            </div>
+          </div>
+
+          <div>
+            <label>個人情報利用同意 [必須]</label>
+            <input
+              type="checkbox"
+              name="個人情報利用同意"
+              data-formrun-required
+            />
+            <div data-formrun-show-if-error="個人情報利用同意">
+              同意してください
+            </div>
+          </div>
+
+          <!-- ボット投稿をブロックするためのタグ -->
+          <div class="_formrun_gotcha">
+            <style media="screen">
+              ._formrun_gotcha {
+                position: absolute !important;
+                height: 1px;
+                width: 1px;
+                overflow: hidden;
+              }
+            </style>
+            <label for="_formrun_gotcha"
+              >If you are a human, ignore this field</label
+            >
+            <input
+              type="text"
+              name="_formrun_gotcha"
+              id="_formrun_gotcha"
+              tabindex="-1"
+            />
+          </div>
+          <div class="w-100 pt-3 text-center mx-auto">
+            <button
+              type="submit"
+              data-formrun-error-text="未入力の項目があります"
+              data-formrun-submitting-text="送信中..."
+              class="
+                w-full
+                rounded-xl
+                border border-pink-500
+                px-5
+                py-1
+                transition
+                duration-50
+                focus:outline-none
+                font-semibold
+                hover:bg-white hover:text-pink-500
+                text-base
+                cursor-pointer
+                bg-pink-500
+                text-white
+              "
+            >
+              送信
+            </button>
+          </div>
+        </form>
       </div>
-    </form>
+    </div>
     <footer>
       <div class="md:flex md:h-20 bg-pink-500 text-white pt-8">
         <p class="w-full md:w-4/12 text-xl md:pl-10 text-center items-center">
           BeP creative studio
         </p>
-        <span class="block text-center md:w-4/12 text-center"
-          >©bep creative studio</span
-        >
+        <span class="block text-center md:w-4/12">©bep creative studio</span>
       </div>
     </footer>
     <script src="swiper.min.js"></script>
