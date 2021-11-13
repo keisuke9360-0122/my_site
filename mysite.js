@@ -1,6 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-  $(".wrap").fadeOut(2000);
-});
+  $(".wrap").addClass('fadeout');
+  setTimeout(function(){
+    $(".wrap").css({"display":"none"});
+    // $(".top-container").addClass('in');
+  },3000);
+  
+},false)
+;
+// let wrapout =document.getElementById('wrap');
+// document.addEventListener("lDOMContentLoaded",function(){
+//   wrapout.classList.add('fadeout');
+//   console.log(wrapout)
+//   setTimeout(function(){
+//     wrapout.style.display="none";
+//   },3000)
+// },false)
 const nav = document.getElementById("site-menu");
 const header = document.getElementById("top");
 
@@ -179,6 +193,7 @@ function moveAnimation() {
     if (scroll >= elemPos - windowHeight) {
       if (randomElm2Child.length > 0) {
         //配列数以上であれば処理をおこなう
+      
         let rnd = Math.floor(Math.random() * randomElm2Child.length); //配列数から表示する数値をランダムで取得
         let moveData = "fadeUphair"; //アニメーション名＝CSSのクラス名を指定
         if (animeFlag) {

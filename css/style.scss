@@ -7,23 +7,50 @@
 //   user-select: none;
 //   line-height:1;
 // }
+.fadeout {
+  animation:fadeOut 3s;
+  animation-fill-mode: both;
+}
+@keyframes fadeOut {
+  0%{
+    opacity:1;
+  }
+
+  100% {
+    opacity:0;
+  }
+}
+// .in{
+//   animation:in 4s;
+//   animation-fill-mode: both;
+// }
+// @keyframes in {
+//   0%{
+//     opacity:0;
+//   }
+//   100% {
+//     opacity:1;
+//   }
+// }
 .fadein {
   opacity: 0;
   transform: translate(0, 20px);
   transition: all 1s;
 }
 .top-container {
-  background-image: url(../img/IMG_0550.jpeg);
+  background-image: url(/img/IMG_0550.jpeg);
   height: 0;
   padding-top: 66.6%;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  
 }
 #site-menu {
   // color: #fff;
   position: sticky;
   top: 0;
+  z-index:99;
 }
 .fadein.active {
   opacity: 1;
@@ -56,6 +83,7 @@
     transition: all 0.25s ease-in;
     z-index: 1;
   }
+  
 }
 @media (max-width: 480px) {
   // #menu {
@@ -64,7 +92,7 @@
   //   height: 100vh;
   //   position: fixed;
   //   top: 10%;
-
+   
   //   ul {
   //     display: flex;
   //     flex-direction: column;
@@ -139,6 +167,12 @@
 .section-title {
   font-family: "Yrsa", serif;
 }
+.global-font {
+  font-family:"游ゴシック体", YuGothic;
+}
+.plof-text{
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
 .nav-menu a {
   margin: 1px 10px;
   display: inline-block;
@@ -190,15 +224,15 @@
     opacity: 0;
   }
 }
-#splash {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: #333;
-  z-index: 9999999;
-  text-align: center;
-  color: #fff;
-}
+// #splash {
+//   position: fixed;
+//   width: 100%;
+//   height: 100%;
+//   background: #333;
+//   z-index: 9999999;
+//   text-align: center;
+//   color: #fff;
+// }
 
 // #splash-logo {
 //   position: absolute;
@@ -213,22 +247,22 @@
 // }
 
 /*bodyにappearクラスがついたら出現*/
-section.appear .splashbg {
-  display: block;
-  // content: "";
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  // height: 100vh;
-  top: 0;
-  left: 0;
-  transform: scaleX(0);
-  background-color: #333; /*伸びる背景色の設定*/
-  animation-name: PageAnime;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}
+// section.appear .splashbg {
+//   display: block;
+//   // content: "";
+//   position: fixed;
+//   z-index: 999;
+//   width: 100%;
+//   // height: 100vh;
+//   top: 0;
+//   left: 0;
+//   transform: scaleX(0);
+//   // background-color: #333; /*伸びる背景色の設定*/
+//   animation-name: PageAnime;
+//   animation-duration: 3s;
+//   animation-timing-function: ease-in-out;
+//   animation-fill-mode: forwards;
+// }
 
 @keyframes PageAnime {
   0% {
@@ -255,13 +289,13 @@ section.appear .splashbg {
 }
 
 /*bodyにappearクラスがついたら出現*/
-section.appear #container {
-  animation-name: PageAnimeAppear;
-  animation-duration: 1s;
-  animation-delay: 0.8s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
+// section.appear #container {
+//   animation-name: PageAnimeAppear;
+//   animation-duration: 1s;
+//   animation-delay: 0.8s;
+//   animation-fill-mode: forwards;
+//   opacity: 0;
+// }
 
 @keyframes PageAnimeAppear {
   0% {
@@ -338,6 +372,7 @@ section.appear #container {
     //   transition: 2s;
     //
     // }
+    
     .img-circle {
       // opacity: 0;
       transition: 2s;
@@ -346,57 +381,64 @@ section.appear #container {
       position: absolute; /* 絶対位置指定 */
       top: 0;
       left: 0;
+      
       // opacity: 0; /* マスクを表示しない */
-      background-color: rgba(252, 248, 248, 0.9); /* マスクは半透明 */
+      // background-color: rgba(252, 248, 248, 0.9); /* マスクは半透明 */
       -webkit-transition: all 0.2s ease;
       transition: all 2s ease;
 
-      span:nth-of-type(1) {
-        // display: block;
-        top: 30%;
-        left: 50%;
-        border: 2px solid white;
-        // opacity: 0;
-        transition: 2s;
-        transform: translateY(-50%) translateX(-50%);
-        background-color: #ffb06b;
-      }
-      span:nth-of-type(2) {
-        bottom: 30%;
-        left: 70%;
-        border: 2px solid white;
-        // opacity: 0;
-        transition: 2s;
-        transform: translateY(-50%) translateX(-50%);
-        background-color: #618f7b;
-      }
-      @media screen and (max-width: 480px) {
-        span:nth-of-type(2) {
-          bottom: 10%;
-          left: 80%;
-        }
-      }
-      span:nth-of-type(3) {
-        bottom: 30%;
-        left: 30%;
-        border: 2px solid white;
-        // opacity: 0;
-        transition: 2s;
-        transform: translateY(-50%) translateX(-50%);
-        background-color: #8e6acc;
-      }
-      @media screen and (max-width: 480px) {
-        span:nth-of-type(3) {
-          bottom: 10%;
-          left: 20%;
-        }
-      }
+      // span:nth-of-type(1) {
+      //   // display: block;
+      //   top: 30%;
+      //   left: 50%;
+      //   border: 2px solid white;
+      //   // opacity: 0;
+      //   transition: 2s;
+      //   transform: translateY(-50%) translateX(-50%);
+      //   background-color: #ffb06b;
+      // }
+      // span:nth-of-type(2) {
+      //   bottom: 30%;
+      //   left: 70%;
+      //   border: 2px solid white;
+      //   // opacity: 0;
+      //   transition: 2s;
+      //   transform: translateY(-50%) translateX(-50%);
+      //   background-color: #618f7b;
+      // }
+      // @media screen and (max-width: 480px) {
+      //   span:nth-of-type(2) {
+      //     bottom: 10%;
+      //     left: 80%;
+      //   }
+      // }
+      // span:nth-of-type(3) {
+      //   bottom: 30%;
+      //   left: 30%;
+      //   border: 2px solid white;
+      //   // opacity: 0;
+      //   transition: 2s;
+      //   transform: translateY(-50%) translateX(-50%);
+      //   background-color: #8e6acc;
+      // }
+      // @media screen and (max-width: 480px) {
+      //   span:nth-of-type(3) {
+      //     bottom: 10%;
+      //     left: 20%;
+      //   }
+      // }
     }
   }
 }
 .profile-image:hover .img-circle {
   opacity: 1; /* マスクを表示する */
 }
+
+  @media screen and (max-width: 500px) {
+    .pro {
+      display:none;
+    }
+  }
 // .
 .works-image {
   display: grid;
@@ -542,25 +584,25 @@ section.appear #container {
 //   height:120%;
 //   background:#8e6acc ;
 // }
-.main-image02 {
-  position: relative;
-  z-index: 0;
-}
-.main-image02:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 130px;
+// .main-image02 {
+//   position: relative;
+//   z-index: 0;
+// }
+// .main-image02:after {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   top: 130px;
 
-  /*四角形を傾けます*/
-  transform: skewY(-10deg);
-  transform-origin: bottom left;
+// //   /*四角形を傾けます*/
+//   transform: skewY(-10deg);
+//   transform-origin: bottom left;
 
-  z-index: -1;
-  width: 100%;
-  height: 20%;
-  background-color: #618f7b;
-}
+//   z-index: -1;
+//   width: 100%;
+//   height: 20%;
+//   background-color: #618f7b;
+// }
 
 .swiper-container {
   width: 100%;

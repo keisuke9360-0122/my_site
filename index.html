@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my portfolio</title>
     <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/dist/tailwind.css" />
     <link rel="stylesheet" href="./css/swiper.min.css" />
     <link
@@ -66,7 +72,7 @@
             "
           >
             <p class="section-title text-3xl leading-tight text-pink-500">
-              BePP creative studio
+              BeP creative studio
             </p>
             <button
               id="menuBtn"
@@ -95,7 +101,10 @@
               hidden
             "
           >
-            <ul class="nav-menu md:flex md:flex-grow" id="page-link">
+            <ul
+              class="nav-menu md:flex md:flex-grow section-title"
+              id="page-link"
+            >
               <li>
                 <a
                   href="#area-1"
@@ -109,7 +118,7 @@
                     ease-in-out
                     hover:text-white
                   "
-                  >about site</a
+                  >About site</a
                 >
               </li>
               <li>
@@ -125,7 +134,7 @@
                     ease-in-out
                     hover:text-white
                   "
-                  >Web production</a
+                  >Works</a
                 >
               </li>
               <li>
@@ -173,7 +182,7 @@
                     ease-in-out
                     hover:text-white
                   "
-                  >profile & contuct</a
+                  >Profile & Contuct</a
                 >
               </li>
             </ul>
@@ -182,11 +191,11 @@
       </div>
 
       <!-- </div> -->
-      <a href="#area-1" class="scrolldown">
+      <!-- <a href="#area-1" class="scrolldown">
         <span></span>
         <span></span>
         <span></span>
-      </a>
+      </a> -->
     </div>
 
     <section>
@@ -194,39 +203,45 @@
         <!-- <div id="splash-logo">ローディング</div> -->
         <!--/splash-->
       </div>
-      <div class="splashbg h-screen"></div>
+      <!-- <div class="splashbg h-screen"></div> -->
       <!---画面遷移用-->
-      <div id="container">
-        <div class="plofile-container relative md:flex md:mb-12" id="area-1">
-          <div class="profile-text md:w-1/2 w-full relative h-full">
-            <img class="md:ofject-cover" src="./img/IMG_8029.jpeg" alt="" />
-            <div
-              class="
-                text-contents
-                absolute
-                text-center text-gray-900
-                lg:p-20
-                h-full
-                text-md
-                p-12
-                opacity-100
-                md:opacity-0
-              "
-            >
-              <p class="my-8 lg:my-20 section-title">ABOUT SITE</p>
-              <p class="my-12 lg:my-20 md:text-xl">
-                美容師、フォトグラファー、フロントエンドエンジニアである私が手掛けたフォト作品、お客様のヘアスタイル、web制作物をまとめたポートフォリオサイトです。
-              </p>
-              <p class="my-12 lg:my-20 md:text-xl">『イメージを形にする』</p>
-              <p class="lg:text-xl">
-                新しい価値観をこのサイトを通じてと皆様と創造できたら思います。
-              </p>
-            </div>
+      <!-- <div id="container"> -->
+      <div
+        class="plofile-container relative md:flex md:mb-12 fadein"
+        id="area-1"
+      >
+        <div class="profile-text md:w-1/2 w-full relative h-full">
+          <img class="md:ofject-cover" src="/img/IMG_8029.jpeg" alt="" />
+          <div
+            class="
+              text-contents
+              absolute
+              text-center text-gray-900
+              lg:p-20
+              h-full
+              text-md
+              p-12
+              opacity-100
+              md:opacity-0
+            "
+          >
+            <p class="my-8 lg:my-20 section-title">ABOUT SITE</p>
+            <p class="my-12 lg:my-20 md:text-lg plof-text">
+              美容師、フォトグラファー、フロントエンドエンジニアである私が手掛けたフォト作品、お客様のヘアスタイル、web制作物をまとめたポートフォリオサイトです。
+            </p>
+            <p class="my-12 lg:my-20 md:text-lg plof-text">
+              『イメージを形にする』
+            </p>
+            <p class="lg:text-lg plof-text">
+              新しい価値観をこのサイトを通じてと皆様と創造できたら思います。
+            </p>
           </div>
-          <div class="profile-image h-full relative w-full md:w-1/2">
-            <img class="md:ofject-cover" src="./img/IMG_8083.jpeg" alt="" />
-            <div class="img-circle opacity-100 md:opacity-0">
-              <span
+        </div>
+        <div class="profile-image h-full relative md:w-1/2 w-full">
+          <img class="md:ofject-cover pro" src="/img/IMG_8083.jpeg" alt="" />
+          <div class="img-circle opacity-100 md:opacity-0">
+            <img class="md:ofject-cover pro" src="/img/IMG_8115.jpeg" alt="" />
+            <!-- <span
                 class="
                   h-28
                   w-28
@@ -264,19 +279,19 @@
                   text-gray-600 text-2xl
                 "
                 >web</span
-              >
-            </div>
+              > -->
           </div>
-          <a href="#area-2" class="scrolldown">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
         </div>
-        <!--/container-->
+        <a href="#area-2" class="scrolldown">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
       </div>
+      <!--/container-->
+      <!-- </div> -->
     </section>
-    <div class="mb-4 md:mb-10 lg:h-screen fadein md:m-10" id="area-2">
+    <div class="mb-4 md:mb-10 fadein md:m-10 h-full" id="area-2">
       <!-- <div class="p-10 m-10 bg-gray-100 w-100"> -->
       <h2 class="section-title text-center tracking-wide md:text-4xl my-2">
         Web Work
@@ -287,41 +302,45 @@
             <!-- <div class=""> -->
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
+                <a href="https://bep-creativestudio.com/"
+                  ><img
+                    src="/img/スクリーンショット 2021-11-11 1.00.58.png"
+                    alt=""
+                /></a>
               </div>
               <a href="#"><p class="agent-name">クライアント</p></a>
             </div>
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
-              </div>
-
-              <a href="#"><p class="agent-name">クライアント</p></a>
-            </div>
-            <div class="image-item">
-              <div class="image-container">
-                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
+                <a href="#"><img src="/img/comming_soon.png" alt="" /></a>
               </div>
 
               <a href="#"><p class="agent-name">クライアント</p></a>
             </div>
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
+                <a href="#"><img src="/img/comming_soon.png" alt="" /></a>
               </div>
 
               <a href="#"><p class="agent-name">クライアント</p></a>
             </div>
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
+                <a href="#"><img src="/img/comming_soon.png" alt="" /></a>
               </div>
 
               <a href="#"><p class="agent-name">クライアント</p></a>
             </div>
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
+                <a href="#"><img src="/img/comming_soon.png" alt="" /></a>
+              </div>
+
+              <a href="#"><p class="agent-name">クライアント</p></a>
+            </div>
+            <div class="image-item">
+              <div class="image-container">
+                <a href="#"><img src="/img/comming_soon.png" alt="" /></a>
               </div>
 
               <a href="#"><p class="agent-name">クライアント</p></a>
@@ -333,41 +352,41 @@
             <!-- <div class=""> -->
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
+                <a href="#"><img src="/img/comming_soon.png" alt="" /></a>
               </div>
               <a href="#"><p class="agent-name">クライアント</p></a>
             </div>
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
-              </div>
-
-              <a href="#"><p class="agent-name">クライアント</p></a>
-            </div>
-            <div class="image-item">
-              <div class="image-container">
-                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
+                <a href="#"><img src="/img/comming_soon.png" alt="" /></a>
               </div>
 
               <a href="#"><p class="agent-name">クライアント</p></a>
             </div>
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
+                <a href="#"><img src="/img/comming_soon.png" alt="" /></a>
               </div>
 
               <a href="#"><p class="agent-name">クライアント</p></a>
             </div>
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
+                <a href="#"><img src="/img/comming_soon.png" alt="" /></a>
               </div>
 
               <a href="#"><p class="agent-name">クライアント</p></a>
             </div>
             <div class="image-item">
               <div class="image-container">
-                <a href="#"><img src="./img/comming_soon.png" alt="" /></a>
+                <a href="#"><img src="/img/comming_soon.png" alt="" /></a>
+              </div>
+
+              <a href="#"><p class="agent-name">クライアント</p></a>
+            </div>
+            <div class="image-item">
+              <div class="image-container">
+                <a href="#"><img src="/img/comming_soon.png" alt="" /></a>
               </div>
 
               <a href="#"><p class="agent-name">クライアント</p></a>
@@ -385,11 +404,11 @@
           <span class="fas fa-2x fa-angle-double-right"></span>
         </p>
       </div>
-      <a href="#area-3" class="scrolldown block h-20 md:h-0">
+      <!-- <a href="#area-3" class="scrolldown block h-20 md:h-0">
         <span></span>
         <span></span>
         <span></span>
-      </a>
+      </a> -->
     </div>
 
     <div class="photo-works fadein md:mb-10" id="area-3">
@@ -401,58 +420,38 @@
           <ul class="swiper-wrapper main-image02__list">
             <li class="swiper-slide main-image02__item">
               <a
-                href="./img/comming_soon.png"
+                href="/img/IMG_5344.jpeg"
                 class="image"
                 data-modaal-desc="画像1"
               >
-                <img
-                  src="./img/comming_soon.png"
-                  width="800"
-                  height="600"
-                  alt=""
-                />
+                <img src="/img/IMG_5344.jpeg" width="800" height="600" alt="" />
               </a>
             </li>
             <li class="swiper-slide main-image02__item">
               <a
-                href="./img/comming_soon.png"
+                href="/img/IMG_4478.jpeg"
                 class="image"
                 data-modaal-desc="画像2"
               >
-                <img
-                  src="./img/comming_soon.png"
-                  width="800"
-                  height="600"
-                  alt=""
-                />
+                <img src="/img/IMG_4478.jpeg" width="800" height="600" alt="" />
               </a>
             </li>
             <li class="swiper-slide main-image02__item">
               <a
-                href="./img/comming_soon.png"
+                href="/img/IMG_8764.jpeg"
                 class="image"
                 data-modaal-desc="画像3"
               >
-                <img
-                  src="./img/comming_soon.png"
-                  width="800"
-                  height="600"
-                  alt=""
-                />
+                <img src="/img/IMG_8764.jpeg" width="800" height="600" alt="" />
               </a>
             </li>
             <li class="swiper-slide main-image02__item">
               <a
-                href="./img/comming_soon.png"
+                href="/img/IMG_1371.jpeg"
                 class="image"
                 data-modaal-desc="画像4"
               >
-                <img
-                  src="./img/comming_soon.png"
-                  width="800"
-                  height="600"
-                  alt=""
-                />
+                <img src="/img/IMG_1371.jpeg" width="800" height="600" alt="" />
               </a>
             </li>
           </ul>
@@ -463,45 +462,25 @@
           <ul class="swiper-wrapper main-image-thumbs__list">
             <li class="swiper-slide main-image02-thumbs__item">
               <!-- TODO: おると属性を指定する -->
-              <img
-                src="./img/comming_soon.png"
-                width="800"
-                height="600"
-                alt=""
-              />
+              <img src="/img/IMG_5344.jpeg" width="800" height="600" alt="" />
             </li>
             <li class="swiper-slide main-image02-thumbs__item">
-              <img
-                src="./img/comming_soon.png"
-                width="800"
-                height="600"
-                alt=""
-              />
+              <img src="/img/IMG_4478.jpeg" width="800" height="600" alt="" />
             </li>
             <li class="swiper-slide main-image02-thumbs__item">
-              <img
-                src="./img/comming_soon.png"
-                width="800"
-                height="600"
-                alt=""
-              />
+              <img src="/img/IMG_8764.jpeg" width="800" height="600" alt="" />
             </li>
             <li class="swiper-slide main-image02-thumbs__item">
-              <img
-                src="./img/comming_soon.png"
-                width="800"
-                height="600"
-                alt=""
-              />
+              <img src="/img/IMG_1371.jpeg" width="800" height="600" alt="" />
             </li>
           </ul>
         </div>
       </div>
-      <a href="#area-4" class="scrolldown text-blue-200">
+      <!-- <a href="#area-4" class="scrolldown text-blue-200">
         <span></span>
         <span></span>
         <span></span>
-      </a>
+      </a> -->
     </div>
     <div class="hair-works fadein px-4 h-full" id="area-4">
       <h2 class="section-title text-center md:text-4xl my-12">Hair works</h2>
@@ -534,15 +513,11 @@
         >
           <div class="image-container">
             <a
-              href="./img/comming_soon.png"
+              href="/img/comming_soon.png"
               class="image"
               data-modaal-desc="画像4"
             >
-              <img
-                src="./img/IMG_1458.jpeg"
-                class="object-cover w-100"
-                alt=""
-              />
+              <img src="/img/IMG_1458.jpeg" class="object-cover w-100" alt="" />
             </a>
           </div>
         </div>
@@ -561,7 +536,7 @@
         >
           <div class="image-container flex items-center">
             <a
-              href="./img/comming_soon.png"
+              href="/img/comming_soon.png"
               class="image"
               data-modaal-desc="画像4"
             >
@@ -593,7 +568,7 @@
               <li>
                 <img
                   class="md:hidden ofject-cover overflow-hidden"
-                  src="./img/IMG_1458.jpeg"
+                  src="/img/IMG_1458.jpeg"
                   alt=""
                 />
                 <div class="hair-mask">
@@ -614,7 +589,7 @@
               <li>
                 <img
                   class="md:hidden ofject-cover overflow-hidden"
-                  src="./img/IMG_1458.jpeg"
+                  src="/img/IMG_1458.jpeg"
                   alt=""
                 />
                 <div class="hair-mask">
@@ -635,7 +610,7 @@
               <li>
                 <img
                   class="md:hidden ofject-cover overflow-hidden"
-                  src="./img/IMG_1458.jpeg"
+                  src="/img/IMG_1458.jpeg"
                   alt=""
                 />
                 <div class="hair-mask">
@@ -656,7 +631,7 @@
               <li>
                 <img
                   class="md:hidden ofject-cover overflow-hidden"
-                  src="./img/IMG_1458.jpeg"
+                  src="/img/IMG_1458.jpeg"
                   alt=""
                 />
                 <div class="hair-mask">
@@ -682,17 +657,17 @@
                 >
               </p>
               <p>
-                <img src="./img/comming_soon.png" alt="" /><span class="caption"
+                <img src="/img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming_soon.png" alt="" /><span class="caption"
+                <img src="/img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming_soon.png" alt="" /><span class="caption"
+                <img src="/img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
@@ -704,17 +679,17 @@
                 >
               </p>
               <p>
-                <img src="./img/comming_soon.png" alt="" /><span class="caption"
+                <img src="/img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming_soon.png" alt="" /><span class="caption"
+                <img src="/img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming_soon.png" alt="" /><span class="caption"
+                <img src="/img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
@@ -726,17 +701,17 @@
                 >
               </p>
               <p>
-                <img src="./img/comming_soon.png" alt="" /><span class="caption"
+                <img src="/img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming_soon.png" alt="" /><span class="caption"
+                <img src="/img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming_soon.png" alt="" /><span class="caption"
+                <img src="/img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
@@ -748,23 +723,23 @@
                 >
               </p>
               <p>
-                <img src="./img/comming_soon.png" alt="" /><span class="caption"
+                <img src="/img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming_soon.png" alt="" /><span class="caption"
+                <img src="/img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
               <p>
-                <img src="./img/comming_soon.png" alt="" /><span class="caption"
+                <img src="/img/comming_soon.png" alt="" /><span class="caption"
                   >ヘアスタイルの詳細<br />目安時間</span
                 >
               </p>
             </section>
             <ul class="price-container text-center md:my-16 mt-8">
-              <li class="my-12 md:my-8"><p>-Price inTax-</p></li>
+              <li class="my-12 md:my-8 section-title"><p>-Price inTax-</p></li>
               <li class="flex justify-around">
                 <p>cut</p>
                 <p>¥5000</p>
@@ -806,12 +781,12 @@
           "
         >
           <a
-            href="./img/comming_soon.png"
+            href="/img/comming_soon.png"
             class="image"
             data-modaal-desc="画像4"
           >
             <img
-              src="./img/IMG_1458.jpeg"
+              src="/img/IMG_1458.jpeg"
               class="object-cover h-100 w-100"
               alt=""
             />
@@ -830,12 +805,12 @@
           "
         >
           <a
-            href="./img/comming_soon.png"
+            href="/img/comming_soon.png"
             class="image"
             data-modaal-desc="画像4"
           >
             <img
-              src="./img/IMG_1458.jpeg"
+              src="/img/IMG_1458.jpeg"
               class="object-cover h-100 w-100"
               alt=""
             />
@@ -855,12 +830,12 @@
           "
         >
           <a
-            href="./img/comming_soon.png"
+            href="/img/comming_soon.png"
             class="image"
             data-modaal-desc="画像4"
           >
             <img
-              src="./img/IMG_1458.jpeg"
+              src="/img/IMG_1458.jpeg"
               class="object-cover h-100 w-100"
               alt=""
             />
@@ -880,27 +855,27 @@
           "
         >
           <a
-            href="./img/comming_soon.png"
+            href="/img/comming_soon.png"
             class="image"
             data-modaal-desc="画像4"
           >
             <img
-              src="./img/IMG_1458.jpeg"
+              src="/img/IMG_1458.jpeg"
               class="object-cover h-100 w-100"
               alt=""
             />
           </a>
         </div>
       </div>
-      <a href="#area-5" class="scrolldown block h-20 md:h-0">
+      <!-- <a href="#area-5" class="scrolldown block h-20 md:h-0">
         <span></span>
         <span></span>
         <span></span>
-      </a>
+      </a> -->
     </div>
-    <div id="area-5" class="lg:h-screen fadein">
+    <div id="area-5" class="lg:h-full fadein">
       <h2 class="section-title text-center md:text-4xl my-12">
-        profile & contact
+        Profile & Contact
       </h2>
       <div class="form-section md:flex lg:px-10 lg:py-20">
         <div
@@ -918,15 +893,15 @@
             <div class="w-1/2 mx-auto lg:w-2/4">
               <p class="border rounded-full border-pink-600">
                 <img
-                  src="./img/IMG_1458.jpeg"
+                  src="/img/IMG_1458.jpeg"
                   class="ofject-cover w-full rounded-full"
                   alt=""
                 />
               </p>
             </div>
             <div class="w-full lg:w-2/4 px-4">
-              <p class="my-4">kei</p>
-              <p class="text-base">
+              <p class="my-4 global-font">kei</p>
+              <p class="plof-text">
                 福岡県出身。福岡市内の美容学校卒業のち都内ヘアサロンに就職。雑誌やwebの広告撮影なども経験し、10年勤務後福岡に戻り、かねてより興味のあったエンジニアの勉強を始める。美容、写真、web制作を組み合わせた新しい価値観を生み出すために活動中。趣味は、サッカー観戦やアウトドア全般。
               </p>
             </div>
